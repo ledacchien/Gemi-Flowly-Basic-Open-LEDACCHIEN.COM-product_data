@@ -118,11 +118,9 @@ def show_chatbot():
         st.error(f"Lỗi cấu hình Gemini: {e}")
         return
 
-    # Khai báo tools cho Gemini
     tools = [find_products, count_products_by_type]
     model_name = rfile("module_gemini.txt").strip() or "gemini-1.5-flash"
     
-    # Khởi tạo model và lịch sử chat trong session_state
     if "gemini_model" not in st.session_state:
         st.session_state.gemini_model = genai.GenerativeModel(model_name=model_name, tools=tools)
     if "chat_session" not in st.session_state:
@@ -131,30 +129,23 @@ def show_chatbot():
         initial_message = rfile("02.assistant.txt") or "Tôi có thể giúp gì cho bạn?"
         st.session_state.messages = [{"role": "assistant", "content": initial_message}]
 
-    # Hiển thị các tin nhắn đã có
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
-    # Xử lý tin nhắn mới
     if prompt := st.chat_input("Bạn nhập nội dung cần trao đổi ở đây nhé?"):
         st.session_state.messages.append({"role": "user", "content": prompt})
         st.rerun()
 
-    # Gửi tin nhắn đến Gemini và xử lý phản hồi
     if st.session_state.messages and st.session_state.messages[-1]["role"] == "user":
         user_prompt = st.session_state.messages[-1]["content"]
         
-        # Thêm system prompt vào đầu mỗi lần gửi (Gemini không có role 'system' trong start_chat)
         full_prompt = (rfile("01.system_trainning.txt") + "\n\nHỏi: " + user_prompt)
 
         with st.chat_message("assistant"):
             with st.spinner("Trợ lý đang suy nghĩ..."):
                 try:
-                    # Gửi tin nhắn và để Gemini tự động gọi hàm nếu cần
                     response = st.session_state.chat_session.send_message(full_prompt)
-                    
-                    # Gemini đã tự động xử lý tool call và trả về kết quả cuối cùng
                     final_response = response.text
                     st.markdown(final_response)
                     st.session_state.messages.append({"role": "assistant", "content": final_response})
@@ -163,21 +154,25 @@ def show_chatbot():
 
 # --- CÁC HÀM CÒN LẠI ---
 def check_login():
-    if st.session_state.get("authenticated", False): return True
+    """Kiểm tra mật khẩu từ file password.txt."""
+    if st.session_state.get("authenticated", False):
+        return True
+    
     st.title("🔐 Đăng nhập vào ứng dụng")
+    
+    correct_password = rfile("password.txt")
+    if not correct_password:
+        st.error("Lỗi: Không tìm thấy tệp 'password.txt' hoặc tệp trống.")
+        return False
+
     with st.form("login_form"):
-        username = st.text_input("Tên đăng nhập")
         password = st.text_input("Mật khẩu", type="password")
         if st.form_submit_button("Đăng nhập"):
-            correct_username, correct_password = st.secrets.get("USERNAME"), st.secrets.get("PASSWORD")
-            if not correct_username or not correct_password:
-                st.error("Lỗi: Thông tin đăng nhập chưa được thiết lập trên server.")
-                return False
-            if username == correct_username and password == correct_password:
+            if password == correct_password:
                 st.session_state["authenticated"] = True
                 st.rerun()
             else:
-                st.error("Tên đăng nhập hoặc mật khẩu không chính xác.")
+                st.error("Mật khẩu không chính xác.")
     return False
 
 def show_main_page():
