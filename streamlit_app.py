@@ -26,92 +26,6 @@ def load_config_data(config_file, default_data):
     except Exception:
         return default_data
 
-# --- CÁC HÀM XỬ LÝ DỮ LIỆU ---
-
-@st.cache_data(ttl=600)
-def get_all_products_as_dicts(folder_path="product_data"):
-    """
-    Tải tất cả sản phẩm, chuyển đổi thành danh sách các dictionary.
-    """
-    product_index = []
-    if not os.path.isdir(folder_path):
-        return []
-    
-    file_paths = [f for f in glob.glob(os.path.join(folder_path, '*.txt')) if not os.path.basename(f) == '_link.txt']
-    
-    for file_path in file_paths:
-        content = rfile(file_path)
-        if not content: continue
-            
-        product_dict = {}
-        for line in content.split('\n'):
-            if ':' in line:
-                key, value_str = line.split(':', 1)
-                key_clean = key.strip()
-                value_clean = value_str.strip()
-                
-                try:
-                    numerical_part = re.sub(r'[^\d.]', '', value_clean)
-                    if numerical_part:
-                        product_dict[key_clean] = float(numerical_part)
-                    else:
-                        product_dict[key_clean] = value_clean
-                except (ValueError, TypeError):
-                    product_dict[key_clean] = value_clean
-        
-        product_dict['original_content'] = content
-        if product_dict:
-            product_index.append(product_dict)
-    return product_index
-
-# --- CÁC CÔNG CỤ CHUYÊN DỤNG CHO AI (LOGIC BẰNG PYTHON) ---
-
-def find_products(product_type: str = None, sort_key: str = None, sort_order: str = 'desc', n_results: int = 1):
-    """
-    Tìm kiếm, lọc và sắp xếp sản phẩm. Luôn trả về một dictionary chứa một chuỗi kết quả duy nhất.
-    """
-    all_products = get_all_products_as_dicts()
-
-    products_to_process = all_products
-    if product_type:
-        products_to_process = [p for p in all_products if p.get("loai_san_pham", "").lower() == product_type.lower()]
-
-    if not products_to_process:
-        return {"result": "Không tìm thấy sản phẩm nào thuộc loại này."}
-
-    if sort_key:
-        valid_products = [p for p in products_to_process if isinstance(p.get(sort_key), (int, float))]
-        if not valid_products:
-            return {"result": f"Không có dữ liệu hợp lệ để sắp xếp theo '{sort_key}'."}
-            
-        is_descending = sort_order == 'desc'
-        sorted_products = sorted(valid_products, key=lambda x: x[sort_key], reverse=is_descending)
-        
-        products_to_return = sorted_products
-        if n_results == 1 and len(sorted_products) > 0:
-            top_value = sorted_products[0][sort_key]
-            products_to_return = [p for p in sorted_products if p.get(sort_key) == top_value]
-        
-        final_content_list = [p.get('original_content', '') for p in products_to_return[:n_results]]
-    
-    else:
-        final_content_list = [p.get('original_content', '') for p in products_to_process[:n_results]]
-
-    # Nối tất cả kết quả thành một chuỗi văn bản duy nhất
-    response_string = "\n\n---\n\n".join(final_content_list)
-    return {"result": f"Tìm thấy {len(final_content_list)} sản phẩm:\n{response_string}"}
-
-
-def count_products_by_type(product_type: str = None):
-    """Đếm chính xác số lượng sản phẩm và trả về một chuỗi."""
-    all_products = get_all_products_as_dicts()
-    if not product_type:
-        total_count = len(all_products)
-        return {"result": f"Tổng số sản phẩm là {total_count}."}
-        
-    count = sum(1 for p in all_products if p.get("loai_san_pham", "").lower() == product_type.lower())
-    return {"result": f"Số lượng sản phẩm loại '{product_type}' là {count}."}
-
 # --- LOGIC CHATBOT VỚI GEMINI ---
 def show_chatbot():
     google_api_key = st.secrets.get("GOOGLE_API_KEY")
@@ -124,61 +38,52 @@ def show_chatbot():
         st.error(f"Lỗi cấu hình Gemini: {e}")
         return
 
-    tools = [find_products, count_products_by_type]
     model_name = rfile("module_gemini.txt").strip() or "gemini-1.5-pro"
     
+    # Khởi tạo model và lịch sử chat
     if "gemini_model" not in st.session_state:
-        st.session_state.gemini_model = genai.GenerativeModel(model_name=model_name, tools=tools)
-    if "chat_session" not in st.session_state:
-        st.session_state.chat_session = st.session_state.gemini_model.start_chat()
+        st.session_state.gemini_model = genai.GenerativeModel(model_name=model_name)
     if "messages" not in st.session_state:
         initial_message = rfile("02.assistant.txt") or "Tôi có thể giúp gì cho bạn?"
         st.session_state.messages = [{"role": "assistant", "content": initial_message}]
 
+    # Hiển thị các tin nhắn đã có
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
+    # Xử lý tin nhắn mới
     if prompt := st.chat_input("Bạn nhập nội dung cần trao đổi ở đây nhé?"):
         st.session_state.messages.append({"role": "user", "content": prompt})
         st.rerun()
 
+    # Gửi tin nhắn đến Gemini và xử lý phản hồi
     if st.session_state.messages and st.session_state.messages[-1]["role"] == "user":
         user_prompt = st.session_state.messages[-1]["content"]
         
-        full_prompt = (rfile("01.system_trainning.txt") + "\n\nHỏi: " + user_prompt)
+        # Tạo một phiên chat mới mỗi lần để gửi toàn bộ ngữ cảnh
+        chat_session = st.session_state.gemini_model.start_chat()
+        
+        # Đọc file huấn luyện và file dữ liệu sản phẩm
+        system_prompt = rfile("01.system_trainning.txt")
+        product_data = rfile("products_database.txt") # Đọc từ file dữ liệu mới
+
+        # Ghép file huấn luyện, dữ liệu sản phẩm và câu hỏi của người dùng
+        full_prompt = (
+            system_prompt +
+            "\n\n---\n\n# CƠ SỞ DỮ LIỆU SẢN PHẨM\n" +
+            product_data +
+            "\n\n---\n\nHỏi: " +
+            user_prompt
+        )
 
         with st.chat_message("assistant"):
             with st.spinner("Trợ lý đang suy nghĩ..."):
                 try:
-                    response = st.session_state.chat_session.send_message(full_prompt)
-
-                    if response.parts and response.parts[0].function_call:
-                        function_call = response.parts[0].function_call
-                        function_name = function_call.name
-                        
-                        available_functions = {
-                            "find_products": find_products,
-                            "count_products_by_type": count_products_by_type,
-                        }
-                        
-                        function_to_call = available_functions[function_name]
-                        function_args = {key: value for key, value in function_call.args.items()}
-                        
-                        function_response_data = function_to_call(**function_args)
-
-                        # Gửi trực tiếp dictionary trả về từ hàm, để thư viện tự xử lý
-                        response = st.session_state.chat_session.send_message(
-                            genai.Part(function_response=genai.protos.FunctionResponse(
-                                name=function_name,
-                                response=function_response_data,
-                            ))
-                        )
-                    
+                    response = chat_session.send_message(full_prompt)
                     final_response = response.text
                     st.markdown(final_response)
                     st.session_state.messages.append({"role": "assistant", "content": final_response})
-
                 except Exception as e:
                     st.error(f"Đã xảy ra lỗi với Gemini: {e}")
 
@@ -245,7 +150,7 @@ def main():
     with st.sidebar:
         st.success("✅ Đã đăng nhập")
         if st.button("Đăng xuất"):
-            for key in ["authenticated", "messages", "view", "chat_session", "gemini_model"]:
+            for key in ["authenticated", "messages", "view", "gemini_model"]:
                 if key in st.session_state: del st.session_state[key]
             st.rerun()
     if "view" not in st.session_state: st.session_state.view = "main"
