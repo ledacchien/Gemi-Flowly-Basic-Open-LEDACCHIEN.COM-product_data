@@ -32,7 +32,6 @@ def load_config_data(config_file, default_data):
 def get_all_products_as_dicts(folder_path="product_data"):
     """
     Tải tất cả sản phẩm, chuyển đổi thành danh sách các dictionary.
-    Code sẽ tự động cố gắng chuyển các giá trị có dạng số thành kiểu số để so sánh.
     """
     product_index = []
     if not os.path.isdir(folder_path):
@@ -69,7 +68,7 @@ def get_all_products_as_dicts(folder_path="product_data"):
 
 def find_products(product_type: str = None, sort_key: str = None, sort_order: str = 'desc', n_results: int = 1):
     """
-    Tìm kiếm, lọc và sắp xếp sản phẩm. Luôn trả về một dictionary.
+    Tìm kiếm, lọc và sắp xếp sản phẩm. Luôn trả về một dictionary chứa một chuỗi kết quả duy nhất.
     """
     all_products = get_all_products_as_dicts()
 
@@ -88,22 +87,30 @@ def find_products(product_type: str = None, sort_key: str = None, sort_order: st
         is_descending = sort_order == 'desc'
         sorted_products = sorted(valid_products, key=lambda x: x[sort_key], reverse=is_descending)
         
+        products_to_return = sorted_products
         if n_results == 1 and len(sorted_products) > 0:
             top_value = sorted_products[0][sort_key]
-            top_products = [p for p in sorted_products if p.get(sort_key) == top_value]
-            return {"products": [p.get('original_content', '') for p in top_products]}
+            products_to_return = [p for p in sorted_products if p.get(sort_key) == top_value]
+        
+        final_content_list = [p.get('original_content', '') for p in products_to_return[:n_results]]
+    
+    else:
+        final_content_list = [p.get('original_content', '') for p in products_to_process[:n_results]]
 
-        return {"products": [p.get('original_content', '') for p in sorted_products[:n_results]]}
+    # Nối tất cả kết quả thành một chuỗi văn bản duy nhất
+    response_string = "\n\n---\n\n".join(final_content_list)
+    return {"result": f"Tìm thấy {len(final_content_list)} sản phẩm:\n{response_string}"}
 
-    return {"products": [p.get('original_content', '') for p in products_to_process[:n_results]]}
 
 def count_products_by_type(product_type: str = None):
-    """Đếm chính xác số lượng sản phẩm."""
+    """Đếm chính xác số lượng sản phẩm và trả về một chuỗi."""
     all_products = get_all_products_as_dicts()
     if not product_type:
-        return {"total_count": len(all_products)}
+        total_count = len(all_products)
+        return {"result": f"Tổng số sản phẩm là {total_count}."}
+        
     count = sum(1 for p in all_products if p.get("loai_san_pham", "").lower() == product_type.lower())
-    return {f"count_of_{product_type.lower()}": count}
+    return {"result": f"Số lượng sản phẩm loại '{product_type}' là {count}."}
 
 # --- LOGIC CHATBOT VỚI GEMINI ---
 def show_chatbot():
@@ -118,7 +125,7 @@ def show_chatbot():
         return
 
     tools = [find_products, count_products_by_type]
-    model_name = rfile("module_gemini.txt").strip() or "gemini-1.5-flash"
+    model_name = rfile("module_gemini.txt").strip() or "gemini-1.5-pro"
     
     if "gemini_model" not in st.session_state:
         st.session_state.gemini_model = genai.GenerativeModel(model_name=model_name, tools=tools)
@@ -159,13 +166,12 @@ def show_chatbot():
                         function_args = {key: value for key, value in function_call.args.items()}
                         
                         function_response_data = function_to_call(**function_args)
-                        
-                        function_response_str = json.dumps(function_response_data, ensure_ascii=False)
 
+                        # Gửi trực tiếp dictionary trả về từ hàm, để thư viện tự xử lý
                         response = st.session_state.chat_session.send_message(
                             genai.Part(function_response=genai.protos.FunctionResponse(
                                 name=function_name,
-                                response={"result": function_response_str},
+                                response=function_response_data,
                             ))
                         )
                     
