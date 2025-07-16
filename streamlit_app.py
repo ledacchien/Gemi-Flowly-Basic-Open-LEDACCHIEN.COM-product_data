@@ -69,8 +69,7 @@ def get_all_products_as_dicts(folder_path="product_data"):
 
 def find_products(product_type: str = None, sort_key: str = None, sort_order: str = 'desc', n_results: int = 1):
     """
-    Tìm kiếm, lọc và sắp xếp sản phẩm để trả lời các câu hỏi như 'căn hộ rẻ nhất', '3 biệt thự rộng nhất'.
-    Công cụ này xử lý logic so sánh một cách chính xác bằng code Python.
+    Tìm kiếm, lọc và sắp xếp sản phẩm. Luôn trả về một dictionary.
     """
     all_products = get_all_products_as_dicts()
 
@@ -79,12 +78,12 @@ def find_products(product_type: str = None, sort_key: str = None, sort_order: st
         products_to_process = [p for p in all_products if p.get("loai_san_pham", "").lower() == product_type.lower()]
 
     if not products_to_process:
-        return "Không tìm thấy sản phẩm nào thuộc loại này."
+        return {"result": "Không tìm thấy sản phẩm nào thuộc loại này."}
 
     if sort_key:
         valid_products = [p for p in products_to_process if isinstance(p.get(sort_key), (int, float))]
         if not valid_products:
-            return f"Không có dữ liệu hợp lệ để sắp xếp theo '{sort_key}'."
+            return {"result": f"Không có dữ liệu hợp lệ để sắp xếp theo '{sort_key}'."}
             
         is_descending = sort_order == 'desc'
         sorted_products = sorted(valid_products, key=lambda x: x[sort_key], reverse=is_descending)
@@ -92,11 +91,11 @@ def find_products(product_type: str = None, sort_key: str = None, sort_order: st
         if n_results == 1 and len(sorted_products) > 0:
             top_value = sorted_products[0][sort_key]
             top_products = [p for p in sorted_products if p.get(sort_key) == top_value]
-            return [p.get('original_content', '') for p in top_products]
+            return {"products": [p.get('original_content', '') for p in top_products]}
 
-        return [p.get('original_content', '') for p in sorted_products[:n_results]]
+        return {"products": [p.get('original_content', '') for p in sorted_products[:n_results]]}
 
-    return [p.get('original_content', '') for p in products_to_process[:n_results]]
+    return {"products": [p.get('original_content', '') for p in products_to_process[:n_results]]}
 
 def count_products_by_type(product_type: str = None):
     """Đếm chính xác số lượng sản phẩm."""
@@ -160,9 +159,7 @@ def show_chatbot():
                         function_args = {key: value for key, value in function_call.args.items()}
                         
                         function_response_data = function_to_call(**function_args)
-
-                        # *** SỬA LỖI TẠI ĐÂY ***
-                        # Chuyển đổi kết quả thành chuỗi JSON để đảm bảo tính ổn định
+                        
                         function_response_str = json.dumps(function_response_data, ensure_ascii=False)
 
                         response = st.session_state.chat_session.send_message(
