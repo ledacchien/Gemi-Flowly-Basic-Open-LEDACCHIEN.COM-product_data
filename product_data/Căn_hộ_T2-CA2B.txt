@@ -1,0 +1,11 @@
+ten_san_pham: Căn hộ CA2B
+ma_san_pham: CA2B
+loai_san_pham: Căn hộ
+dien_tich: 70
+phong_ngu: 2
+phong_tam: 1
+gia_thue: 10000000.0
+vi_tri: Tầng 2, chung cư cao cấp, khu vực yên tĩnh, gần các tiện ích công cộng.
+tien_ich: An ninh 24/7, bảo vệ khu vực, có khu vực sân chơi.
+mo_ta_noi_that: Nội thất cao cấp, bao gồm sofa, tủ quần áo, giường, máy giặt, bàn ăn.
+mo_ta_dien_nuoc: Đầy đủ thiết bị điện nước, hệ thống cấp nước sạch, máy nước nóng.

@@ -1,0 +1,11 @@
+ten_san_pham: Căn hộ CA2D
+ma_san_pham: CA2D
+loai_san_pham: Căn hộ
+dien_tich: 80
+phong_ngu: 3
+phong_tam: 2
+gia_thue: 12000000.0
+vi_tri: Tầng 2, chung cư cao cấp, gần các trung tâm thương mại.
+tien_ich: Bảo vệ 24/7, sân chơi cho trẻ em.
+mo_ta_noi_that: Nội thất cao cấp, bao gồm điều hòa, máy giặt, sofa.
+mo_ta_dien_nuoc: Hệ thống điện 3 pha, cấp nước sạch, máy nước nóng.

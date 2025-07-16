@@ -1,0 +1,11 @@
+ten_san_pham: Căn hộ CA4D
+ma_san_pham: CA4D
+loai_san_pham: Căn hộ
+dien_tich: 130
+phong_ngu: 4
+phong_tam: 3
+gia_thue: 23000000.0
+vi_tri: Tầng 4, chung cư cao cấp, gần các trung tâm mua sắm.
+tien_ich: An ninh tốt, sân chơi cho trẻ em, chỗ để xe riêng.
+mo_ta_noi_that: Nội thất đầy đủ, bao gồm tủ quần áo, giường ngủ, điều hòa, sofa, bàn ăn.
+mo_ta_dien_nuoc: Hệ thống điện 3 pha, cấp nước sạch, máy nước nóng.

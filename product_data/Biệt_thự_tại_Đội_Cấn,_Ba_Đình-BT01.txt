@@ -1,0 +1,11 @@
+ten_san_pham: Biệt thự tại Đội Cấn, Ba Đình
+ma_san_pham: BT01
+loai_san_pham: Biệt thự
+dien_tich: 250
+phong_ngu: 4
+phong_tam: 3
+gia_thue: 55000000
+vi_tri: Khu vực Đội Cấn, Ba Đình, giao thông thuận tiện, dân trí cao.
+tien_ich: Gara ô tô, sân vườn, an ninh 24/7, gần trường học và trung tâm thương mại.
+mo_ta_noi_that: Nội thất hiện đại, đầy đủ tiện nghi gồm giường, tủ, điều hòa, sofa, bàn ăn.
+mo_ta_dien_nuoc: Hệ thống điện 3 pha, nước sạch, máy nước nóng năng lượng mặt trời.

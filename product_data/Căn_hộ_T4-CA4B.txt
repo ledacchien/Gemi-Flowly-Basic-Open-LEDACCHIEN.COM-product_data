@@ -1,0 +1,11 @@
+ten_san_pham: Căn hộ CA4B
+ma_san_pham: CA4B
+loai_san_pham: Căn hộ
+dien_tich: 120
+phong_ngu: 4
+phong_tam: 3
+gia_thue: 21000000.0
+vi_tri: Tầng 4, chung cư cao cấp, khu vực phát triển.
+tien_ich: Bảo vệ 24/7, chỗ để xe riêng.
+mo_ta_noi_that: Nội thất đầy đủ, bao gồm máy giặt, tủ lạnh, điều hòa.
+mo_ta_dien_nuoc: Hệ thống điện 3 pha, cấp nước sạch, máy nước nóng.

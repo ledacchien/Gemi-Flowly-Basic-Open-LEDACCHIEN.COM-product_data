@@ -1,0 +1,11 @@
+ten_san_pham: Biệt thự tại Văn Quán, Hà Đông
+ma_san_pham: BT13
+loai_san_pham: Biệt thự
+dien_tich: 270
+phong_ngu: 4
+phong_tam: 3
+gia_thue: 79000000
+vi_tri: Khu vực Văn Quán, Hà Đông, giao thông thuận tiện, dân trí cao.
+tien_ich: Gara ô tô, sân vườn, an ninh 24/7, gần trường học và trung tâm thương mại.
+mo_ta_noi_that: Nội thất hiện đại, đầy đủ tiện nghi gồm giường, tủ, điều hòa, sofa, bàn ăn.
+mo_ta_dien_nuoc: Hệ thống điện 3 pha, nước sạch, máy nước nóng năng lượng mặt trời.

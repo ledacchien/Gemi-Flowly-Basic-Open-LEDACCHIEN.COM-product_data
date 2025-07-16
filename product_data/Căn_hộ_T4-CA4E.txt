@@ -1,0 +1,11 @@
+ten_san_pham: Căn hộ CA4E
+ma_san_pham: CA4E
+loai_san_pham: Căn hộ
+dien_tich: 140
+phong_ngu: 5
+phong_tam: 3
+gia_thue: 25000000.0
+vi_tri: Tầng 4, chung cư cao cấp, khu vực yên tĩnh, gần các công viên.
+tien_ich: An ninh 24/7, có khu vực sân chơi và khu vực BBQ ngoài trời.
+mo_ta_noi_that: Nội thất cao cấp, bao gồm tủ lạnh, máy giặt, điều hòa, giường ngủ, bàn ăn.
+mo_ta_dien_nuoc: Hệ thống điện 3 pha, cấp nước sạch, máy nước nóng, ổ cắm điện tiêu chuẩn.

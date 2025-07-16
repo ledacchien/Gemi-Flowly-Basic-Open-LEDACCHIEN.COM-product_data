@@ -1,0 +1,11 @@
+ten_san_pham: Căn hộ CA3A
+ma_san_pham: CA3A
+loai_san_pham: Căn hộ
+dien_tich: 90
+phong_ngu: 3
+phong_tam: 2
+gia_thue: 14000000.0
+vi_tri: Tầng 3, chung cư cao cấp, gần công viên.
+tien_ich: Bảo vệ 24/7, gần các trường học.
+mo_ta_noi_that: Nội thất cao cấp, bao gồm sofa, tủ lạnh, máy giặt.
+mo_ta_dien_nuoc: Hệ thống điện 3 pha, cấp nước sạch, máy nước nóng.

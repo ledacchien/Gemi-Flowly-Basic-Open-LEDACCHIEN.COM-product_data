@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; }
+        img { max-width: 100%; height: auto; border-radius: 8px; }
+        h1, h2 { color: #333; }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Đây là Nội dung Bài viết 1 từ file HTML</h1>
+    <h2>Chủ đề: Du hành Vũ trụ 🚀</h2>
+    <p>Nội dung chi tiết về vũ trụ được lấy từ file <strong>bai_viet_01.html</strong>. Bạn có thể tự do định dạng văn bản, chèn ảnh và video ở đây.</p>
+    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072" alt="Trái Đất">
+    
+    <h2>Video về Trái Đất</h2>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/p21iV5r6IuA" frameborder="0" allowfullscreen></iframe>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+ten_san_pham: Căn hộ CA5B
+ma_san_pham: CA5B
+loai_san_pham: Căn hộ
+dien_tich: 190
+phong_ngu: 5
+phong_tam: 4
+gia_thue: 28000000.0
+vi_tri: Tầng 5 (đỉnh cao của tòa nhà), chung cư siêu cao cấp, hướng nhìn trực diện ra trung tâm thương mại sầm uất và hồ điều hòa thơ mộng, kết nối trực tiếp với các tuyến đường huyết mạch.
+tien_ich: Hệ thống an ninh tối tân với đội ngũ bảo vệ chuyên nghiệp và công nghệ AI, chỗ để xe VIP riêng biệt có mái che, khu vực BBQ sky-garden riêng tư, quyền lui tới business lounge, phòng chiếu phim mini, và các dịch vụ concierge đặc quyền (đặt xe, nhà hàng, vé máy bay).
+mo_ta_noi_that: Nội thất bespoke chế tác thủ công, thể hiện đẳng cấp thượng lưu, bao gồm tủ quần áo thông minh tự động, giường ngủ Hoàng đế (Emperor size) với nệm cao su thiên nhiên, hệ thống máy giặt sấy công nghệ AI, điều hòa không khí lọc bụi mịn và tạo ion, bếp từ đa điểm thông minh kết hợp lò nướng và vi sóng âm tủ.
+mo_ta_dien_nuoc: Hệ thống điện 3 pha ổn định tuyệt đối, nguồn nước khoáng tại vòi, máy nước nóng trung tâm công suất lớn, hệ thống chiếu sáng điều khiển bằng giọng nói và smartphone.
