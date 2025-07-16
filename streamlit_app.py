@@ -145,10 +145,38 @@ def show_chatbot():
         with st.chat_message("assistant"):
             with st.spinner("Trợ lý đang suy nghĩ..."):
                 try:
+                    # Gửi tin nhắn đầu tiên đến Gemini
                     response = st.session_state.chat_session.send_message(full_prompt)
+
+                    # Kiểm tra xem Gemini có muốn gọi hàm không
+                    if response.parts and response.parts[0].function_call:
+                        function_call = response.parts[0].function_call
+                        function_name = function_call.name
+                        
+                        available_functions = {
+                            "find_products": find_products,
+                            "count_products_by_type": count_products_by_type,
+                        }
+                        
+                        function_to_call = available_functions[function_name]
+                        function_args = {key: value for key, value in function_call.args.items()}
+                        
+                        # Thực thi hàm Python
+                        function_response_data = function_to_call(**function_args)
+
+                        # Gửi kết quả của hàm trở lại cho Gemini
+                        response = st.session_state.chat_session.send_message(
+                            genai.Part(function_response=genai.protos.FunctionResponse(
+                                name=function_name,
+                                response={"result": json.dumps(function_response_data, ensure_ascii=False)},
+                            ))
+                        )
+                    
+                    # Lấy phản hồi văn bản cuối cùng và hiển thị
                     final_response = response.text
                     st.markdown(final_response)
                     st.session_state.messages.append({"role": "assistant", "content": final_response})
+
                 except Exception as e:
                     st.error(f"Đã xảy ra lỗi với Gemini: {e}")
 
