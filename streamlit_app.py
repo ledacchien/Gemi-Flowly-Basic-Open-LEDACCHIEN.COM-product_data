@@ -162,11 +162,13 @@ def show_chatbot():
                         function_response_data = function_to_call(**function_args)
 
                         # *** SỬA LỖI TẠI ĐÂY ***
-                        # Gửi lại dữ liệu gốc, không cần dùng json.dumps
+                        # Chuyển đổi kết quả thành chuỗi JSON để đảm bảo tính ổn định
+                        function_response_str = json.dumps(function_response_data, ensure_ascii=False)
+
                         response = st.session_state.chat_session.send_message(
                             genai.Part(function_response=genai.protos.FunctionResponse(
                                 name=function_name,
-                                response={"result": function_response_data},
+                                response={"result": function_response_str},
                             ))
                         )
                     
