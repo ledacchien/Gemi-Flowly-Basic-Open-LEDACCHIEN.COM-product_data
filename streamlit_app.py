@@ -36,28 +36,31 @@ def show_chatbot():
         # Tạo một phiên chat mới mỗi lần để gửi toàn bộ ngữ cảnh
         chat_session = st.session_state.gemini_model.start_chat()
         
-        # --- THAY ĐỔI LOGIC ĐỌC DỮ LIỆU ---
         # Bắt đầu với file huấn luyện hệ thống
         system_context = [rfile("01.system_trainning.txt")]
 
         # Tìm và đọc tất cả các file .txt trong thư mục product_data
         product_data_dir = "product_data"
         if os.path.isdir(product_data_dir):
-            for file_path in glob.glob(os.path.join(product_data_dir, '*.txt')):
+            product_files = glob.glob(os.path.join(product_data_dir, '*.txt'))
+            for file_path in product_files:
                 system_context.append(rfile(file_path))
         
         # Ghép toàn bộ dữ liệu hệ thống và câu hỏi của người dùng
         full_prompt = (
-            "\n\n---\n\n".join(system_context) +  # Nối các phần dữ liệu bằng dấu phân cách
+            "\n\n---\n\n".join(filter(None, system_context)) + # Lọc bỏ các chuỗi rỗng
             "\n\n---\n\nHỏi: " +
             user_prompt
         )
-        # --- KẾT THÚC THAY ĐỔI ---
 
         with st.chat_message("assistant"):
             with st.spinner("Trợ lý đang suy nghĩ..."):
                 try:
-                    response = chat_session.send_message(full_prompt)
+                    # Gửi yêu cầu và TẮT tính năng function calling
+                    response = chat_session.send_message(
+                        full_prompt,
+                        tool_config={'function_calling_config': {'mode': 'none'}}
+                    )
                     final_response = response.text
                     st.markdown(final_response)
                     st.session_state.messages.append({"role": "assistant", "content": final_response})
