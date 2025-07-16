@@ -1,6 +1,6 @@
 import streamlit as st
 from streamlit.components.v1 import html
-from openai import OpenAI, OpenAIError
+import google.generativeai as genai
 import os
 import glob
 import json
@@ -51,18 +51,16 @@ def get_all_products_as_dicts(folder_path="product_data"):
                 key_clean = key.strip()
                 value_clean = value_str.strip()
                 
-                # Cố gắng chuyển đổi giá trị thành số (float) nếu có thể.
                 try:
-                    # Loại bỏ các ký tự không phải số (trừ dấu chấm)
                     numerical_part = re.sub(r'[^\d.]', '', value_clean)
                     if numerical_part:
                         product_dict[key_clean] = float(numerical_part)
-                    else: # Nếu không có phần số, giữ nguyên chuỗi
+                    else:
                         product_dict[key_clean] = value_clean
                 except (ValueError, TypeError):
-                    product_dict[key_clean] = value_clean # Giữ nguyên nếu chuyển đổi lỗi
+                    product_dict[key_clean] = value_clean
         
-        product_dict['original_content'] = content # Giữ lại nội dung gốc
+        product_dict['original_content'] = content
         if product_dict:
             product_index.append(product_dict)
     return product_index
@@ -91,7 +89,6 @@ def find_products(product_type: str = None, sort_key: str = None, sort_order: st
         is_descending = sort_order == 'desc'
         sorted_products = sorted(valid_products, key=lambda x: x[sort_key], reverse=is_descending)
         
-        # Xử lý trường hợp có nhiều sản phẩm bằng nhau ở top
         if n_results == 1 and len(sorted_products) > 0:
             top_value = sorted_products[0][sort_key]
             top_products = [p for p in sorted_products if p.get(sort_key) == top_value]
@@ -109,63 +106,60 @@ def count_products_by_type(product_type: str = None):
     count = sum(1 for p in all_products if p.get("loai_san_pham", "").lower() == product_type.lower())
     return {f"count_of_{product_type.lower()}": count}
 
-# --- LOGIC CHATBOT ---
+# --- LOGIC CHATBOT VỚI GEMINI ---
 def show_chatbot():
-    openai_api_key = st.secrets.get("OPENAI_API_KEY")
-    if not openai_api_key: st.error("Chưa có OpenAI API Key."); return
+    google_api_key = st.secrets.get("GOOGLE_API_KEY")
+    if not google_api_key:
+        st.error("Chưa có Google API Key. Vui lòng thêm vào secrets.toml")
+        return
     try:
-        client = OpenAI(api_key=openai_api_key)
-    except OpenAIError as e:
-        st.error(f"Lỗi xác thực OpenAI API Key: {e}."); return
+        genai.configure(api_key=google_api_key)
+    except Exception as e:
+        st.error(f"Lỗi cấu hình Gemini: {e}")
+        return
 
-    tools = [
-        {"type": "function", "function": {"name": "find_products", "description": "Tìm kiếm, lọc và sắp xếp sản phẩm. Dùng cho các câu hỏi như 'căn hộ rẻ nhất', 'biệt thự rộng nhất', 'top 3 giá cao nhất'.", "parameters": {"type": "object", "properties": {"product_type": {"type": "string", "description": "Loại sản phẩm cần tìm, ví dụ: 'căn hộ', 'biệt thự'."},"sort_key": {"type": "string", "description": "Thuộc tính để sắp xếp. Ví dụ: 'gia_thue' cho giá, 'dien_tich' cho diện tích."}, "sort_order": {"type": "string", "enum": ["asc", "desc"], "description": "'asc' cho tăng dần (rẻ nhất, hẹp nhất), 'desc' cho giảm dần (đắt nhất, rộng nhất)."}, "n_results": {"type": "integer", "description": "Số lượng kết quả trả về."}}}}},
-        {"type": "function", "function": {"name": "count_products_by_type", "description": "Đếm chính xác tổng số sản phẩm hoặc số sản phẩm theo loại.", "parameters": {"type": "object", "properties": {"product_type": {"type": "string", "description": "Loại sản phẩm cần đếm. Để trống để đếm tất cả."}}}}}
-    ]
-
+    # Khai báo tools cho Gemini
+    tools = [find_products, count_products_by_type]
+    model_name = rfile("module_gemini.txt").strip() or "gemini-1.5-flash"
+    
+    # Khởi tạo model và lịch sử chat trong session_state
+    if "gemini_model" not in st.session_state:
+        st.session_state.gemini_model = genai.GenerativeModel(model_name=model_name, tools=tools)
+    if "chat_session" not in st.session_state:
+        st.session_state.chat_session = st.session_state.gemini_model.start_chat()
     if "messages" not in st.session_state:
-        st.session_state.messages = [{"role": "assistant", "content": rfile("02.assistant.txt") or "Tôi có thể giúp gì cho bạn?"}]
+        initial_message = rfile("02.assistant.txt") or "Tôi có thể giúp gì cho bạn?"
+        st.session_state.messages = [{"role": "assistant", "content": initial_message}]
 
+    # Hiển thị các tin nhắn đã có
     for message in st.session_state.messages:
-        with st.chat_message(message["role"]): st.markdown(message["content"])
+        with st.chat_message(message["role"]):
+            st.markdown(message["content"])
 
+    # Xử lý tin nhắn mới
     if prompt := st.chat_input("Bạn nhập nội dung cần trao đổi ở đây nhé?"):
         st.session_state.messages.append({"role": "user", "content": prompt})
         st.rerun()
 
+    # Gửi tin nhắn đến Gemini và xử lý phản hồi
     if st.session_state.messages and st.session_state.messages[-1]["role"] == "user":
+        user_prompt = st.session_state.messages[-1]["content"]
         
-        system_prompt = rfile("01.system_trainning.txt")
-        messages_to_send = [{"role": "system", "content": system_prompt}] + st.session_state.messages
+        # Thêm system prompt vào đầu mỗi lần gửi (Gemini không có role 'system' trong start_chat)
+        full_prompt = (rfile("01.system_trainning.txt") + "\n\nHỏi: " + user_prompt)
 
         with st.chat_message("assistant"):
             with st.spinner("Trợ lý đang suy nghĩ..."):
                 try:
-                    response = client.chat.completions.create(
-                        model=rfile("module_chatgpt.txt").strip() or "gpt-4-turbo",
-                        messages=messages_to_send, tools=tools, tool_choice="auto"
-                    )
-                    response_message = response.choices[0].message
-                    tool_calls = response_message.tool_calls
-
-                    if tool_calls:
-                        available_functions = {"find_products": find_products, "count_products_by_type": count_products_by_type}
-                        messages_to_send.append(response_message)
-                        for tool_call in tool_calls:
-                            function_name = tool_call.function.name
-                            function_args = json.loads(tool_call.function.arguments)
-                            function_to_call = available_functions[function_name]
-                            function_response = function_to_call(**function_args)
-                            messages_to_send.append({"tool_call_id": tool_call.id, "role": "tool", "name": function_name, "content": json.dumps(function_response, ensure_ascii=False)})
-                        
-                        second_response = client.chat.completions.create(model=rfile("module_chatgpt.txt").strip() or "gpt-4-turbo", messages=messages_to_send, stream=True)
-                        final_response = st.write_stream(second_response)
-                        st.session_state.messages.append({"role": "assistant", "content": final_response})
-                    else:
-                        st.markdown(response_message.content)
-                        st.session_state.messages.append({"role": "assistant", "content": response_message.content})
-                except OpenAIError as e:
-                    st.error(f"Đã xảy ra lỗi với OpenAI: {e}")
+                    # Gửi tin nhắn và để Gemini tự động gọi hàm nếu cần
+                    response = st.session_state.chat_session.send_message(full_prompt)
+                    
+                    # Gemini đã tự động xử lý tool call và trả về kết quả cuối cùng
+                    final_response = response.text
+                    st.markdown(final_response)
+                    st.session_state.messages.append({"role": "assistant", "content": final_response})
+                except Exception as e:
+                    st.error(f"Đã xảy ra lỗi với Gemini: {e}")
 
 # --- CÁC HÀM CÒN LẠI ---
 def check_login():
@@ -226,7 +220,7 @@ def main():
     with st.sidebar:
         st.success("✅ Đã đăng nhập")
         if st.button("Đăng xuất"):
-            for key in ["authenticated", "messages", "view"]:
+            for key in ["authenticated", "messages", "view", "chat_session", "gemini_model"]:
                 if key in st.session_state: del st.session_state[key]
             st.rerun()
     if "view" not in st.session_state: st.session_state.view = "main"
