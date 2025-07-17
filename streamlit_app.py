@@ -1,21 +1,3 @@
-Chắc chắn rồi. Tôi đã chỉnh sửa file `streamlit_app.py` để chuyển hoàn toàn từ việc sử dụng API của OpenAI (ChatGPT) sang API của Google Gemini.
-
-Những thay đổi này giữ nguyên toàn bộ logic và tính năng của ứng dụng, bao gồm cả việc sử dụng các công cụ (function calling) để tìm kiếm và đếm sản phẩm.
-
-### Tóm tắt các thay đổi chính:
-
-1.  **Thư viện:** Đã thay đổi thư viện `openai` thành `google.generativeai`.
-2.  **API Key:** Ứng dụng giờ sẽ tìm `GOOGLE_API_KEY` trong mục Secrets của bạn thay vì `OPENAI_API_KEY`.
-3.  **Model:** Tên model sẽ được đọc từ file `module_gemini.txt` và mặc định là `gemini-1.5-pro-latest` nếu không có file.
-4.  **Logic gọi API:** Toàn bộ logic trong hàm `show_chatbot`, từ việc khởi tạo, gửi yêu cầu, xử lý function calling, và hiển thị kết quả, đều đã được viết lại để tương thích với luồng hoạt động của Gemini API.
-5.  **An toàn:** Thêm các thiết lập an toàn cơ bản để lọc nội dung không phù hợp từ Gemini.
-
-Dưới đây là nội dung đã được cập nhật của file.
-
------
-
-### streamlit\_app.py (đã cập nhật)
-
 ```python
 import streamlit as st
 from streamlit.components.v1 import html
