@@ -1,4 +1,4 @@
-2.1.4. Khóa học: Làm chủ AI Agent: Lập trình AI không cần biết code
+Khóa học: Làm chủ AI Agent - Lập trình AI không cần biết code
 
 Mô tả khóa học:
   - Đột phá cho người mới bắt đầu: Khóa học giúp bạn tiếp cận lập trình Python – ngôn ngữ phổ biến nhất, nền tảng quan trọng trong lĩnh vực trí tuệ nhân tạo hiện nay.
