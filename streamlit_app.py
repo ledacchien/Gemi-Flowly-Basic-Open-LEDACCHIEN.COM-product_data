@@ -1,4 +1,3 @@
-```python
 import streamlit as st
 from streamlit.components.v1 import html
 import google.generativeai as genai
@@ -249,5 +248,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-```
