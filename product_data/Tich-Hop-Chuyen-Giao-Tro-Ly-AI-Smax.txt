@@ -1,7 +1,24 @@
-Tên dịch vụ: Tích Hợp & Chuyển Giao Trợ Lý AI Smax
-Mô tả: Xây dựng, huấn luyện và bàn giao Trợ lý AI chuyên nghiệp trên Smax.ai cho doanh nghiệp đã có website. Tự động hóa tư vấn/chăm sóc khách hàng 24/7.
-Chi phí: 1.135.000 VNĐ (thanh toán 1 lần, sở hữu vĩnh viễn).
-Hạng mục bàn giao: 1. Trợ lý AI tinh nhuệ; 2. Bộ não AI độc quyền; 3. Tích hợp 03 kênh (Zalo/Facebook/Live Chat); 4. Tài khoản quản trị Smax; 5. Đào tạo chuyển giao 1-1; 6. Tài liệu vận hành PDF.
-Quy trình triển khai: Giai đoạn 1: Thiết kế chân dung AI; Giai đoạn 2: Xây dựng & huấn luyện; Giai đoạn 3: Thử việc & tinh chỉnh; Giai đoạn 4: Đào tạo & bàn giao.
-Cam kết: Toàn quyền sở hữu 100%; Hỗ trợ cộng đồng lâu dài.
-Lợi ích: Sở hữu tài sản công nghệ vĩnh viễn, đầu tư 1 lần duy nhất.
+2.2.1. Gói 1: Tích Hợp & Chuyển Giao Trợ Lý AI Smax
+
+Mô tả:
+Đây là gói dịch vụ được thiết kế cho các doanh nghiệp đã có website và muốn trang bị cho mình một tài sản công nghệ mạnh mẽ. Chúng tôi sẽ xây dựng, huấn luyện và bàn giao toàn bộ một Trợ lý AI chuyên nghiệp trên nền tảng Smax.ai, giúp bạn tự động hóa việc tư vấn, trả lời câu hỏi và chăm sóc khách hàng 24/7.
+Chi phí đầu tư: 
+1.135.000 VNĐ
+ (Thanh toán 1 lần duy nhất để sở hữu vĩnh viễn).
+Hạng Mục Bàn Giao Chi Tiết:
+  1. Một "Nhân Viên AI" Tinh Nhuệ: Một Trợ lý AI được xây dựng trên nền tảng Smax.ai, được cấu hình và huấn luyện chuyên sâu để hiểu và trả lời các câu hỏi phức tạp theo đúng nghiệp vụ của bạn.
+  2. Bộ Não & Kiến Thức Độc Quyền: Toàn bộ dữ liệu bạn cung cấp (thông tin sản phẩm, chính sách, câu hỏi thường gặp) sẽ được cấu trúc hóa thành một "Bộ não AI". Đây là tài sản trí tuệ cốt lõi, hoàn toàn thuộc về bạn sau khi bàn giao.
+  3. Tích Hợp 03 Kênh Giao Tiếp Chính: Chúng tôi sẽ tích hợp đồng bộ Trợ lý AI lên Zalo Official Account, Facebook Messenger và Live Chat trực tiếp trên website hiện có của bạn.
+  4. Tài Khoản Quản Trị Smax.ai: Bạn sẽ nhận tài khoản quản trị viên cao nhất trên nền tảng Smax.ai, cho phép bạn toàn quyền theo dõi, kiểm soát và chỉnh sửa mọi hoạt động của AI.
+  5. Buổi Đào Tạo Chuyển Giao 1-1: Một buổi đào tạo trực tuyến chuyên sâu (qua Zoom/UltraViewer) để hướng dẫn chi tiết cách sử dụng bảng điều khiển Smax, theo dõi hội thoại và cách tự cập nhật kiến thức cơ bản cho AI.
+  6. Tài Liệu Hướng Dẫn Vận Hành: Một bộ tài liệu dạng PDF được biên soạn chi tiết, dễ hiểu để bạn và đội ngũ có thể tham khảo bất cứ lúc nào.
+Quy Trình Triển Khai (4 Giai Đoạn):
+  - Giai đoạn 1: Khởi động & Thiết kế "Chân dung AI": Cùng nhau xác định mục tiêu, tính cách và nhiệm vụ cho Trợ lý AI.
+  - Giai đoạn 2: Xây dựng & Huấn luyện: Chúng tôi tiến hành xây dựng và "dạy" cho AI từ dữ liệu bạn cung cấp.
+  - Giai đoạn 3: "Thử Việc" và Tinh chỉnh: Bạn sẽ trực tiếp kiểm tra và đưa ra góp ý để chúng tôi hoàn thiện AI.
+  - Giai đoạn 4: Đào tạo & Bàn giao: Tổ chức buổi đào tạo và bàn giao toàn bộ tài sản cho bạn.
+Cam Kết Của Chúng Tôi:
+  - Toàn Quyền Sở Hữu 100%: Chúng tôi cam kết bạn sở hữu hoàn toàn tài sản công nghệ của mình, không có bất kỳ ràng buộc nào sau khi bàn giao.
+  - Hỗ Trợ Cộng Đồng Lâu Dài: Sau khi dự án kết thúc, bạn vẫn là thành viên của cộng đồng ledacchien.com, được tham gia các nhóm chung và các buổi Zoom hỗ trợ hàng tuần.
+Lợi ích lớn nhất: 
+Bạn được sở hữu và toàn quyền kiểm soát một tài sản công nghệ giá trị, làm việc cho bạn vĩnh viễn chỉ với một lần đầu tư duy nhất.

@@ -1,6 +1,24 @@
-Tên dịch vụ: Dịch Vụ Vận Hành & Tối Ưu AI Smax Hàng Tháng
-Mô tả: Vận hành trọn gói cho chủ doanh nghiệp không có thời gian quản lý kỹ thuật. Đội ngũ chuyên trách thay mặt quản lý "nhân viên số" (dành cho khách đã sở hữu Gói 1 hoặc 2).
-Chi phí: 695.000 VNĐ/tháng.
-Hạng mục công việc hàng tháng: 1. Quản lý & vận hành toàn diện; 2. Cập nhật & huấn luyện AI định kỳ; 3. Giám sát & tối ưu hiệu suất; 4. Hỗ trợ kỹ thuật ưu tiên.
-Cam kết: Bàn giao tài khoản trong 24h khi yêu cầu; Tiếp tục hỗ trợ cộng đồng sau ngưng dịch vụ.
-Lợi ích: An tâm tuyệt đối - AI luôn được tối ưu bởi chuyên gia, doanh nghiệp tập trung kinh doanh.
+2.2.3. Gói 3: Dịch Vụ Vận Hành & Tối Ưu AI Smax Hàng Tháng ("Gói An Nhàn")
+
+- Mô tả: Đây là giải pháp vận hành trọn gói, được thiết kế cho các chủ doanh nghiệp không có thời gian hoặc không muốn bận tâm đến các vấn đề kỹ thuật sau khi đã sở hữu Trợ lý AI (từ Gói 1 hoặc Gói 2). Với gói dịch vụ này, chúng tôi sẽ hoạt động như một đội ngũ kỹ thuật chuyên trách, thay mặt bạn quản lý và phát triển "nhân viên số" của mình.
+- Điểm cốt lõi: Tài khoản Smax của bạn sẽ được chúng tôi trực tiếp quản lý trên máy chủ chuyên dụng, đảm bảo sự ổn định, bảo mật và hiệu suất cao nhất. Bạn hoàn toàn rảnh tay để tập trung vào các hoạt động kinh doanh chính.
+- Chi phí dịch vụ: 695.000 VNĐ / tháng.
+- Các Hạng Mục Công Việc & Quyền Lợi Chi Tiết Hàng Tháng:
+  1. Quản Lý & Vận Hành Toàn Diện:
+    - Chúng tôi đảm nhiệm 100% các thao tác kỹ thuật, từ cấu hình, bảo trì đến các hoạt động huấn luyện AI hàng ngày.
+  2. Cập Nhật & Huấn Luyện "Bộ Não" AI Định Kỳ:
+    - Thiết lập kênh liên hệ chuyên biệt: Chúng ta sẽ có một kênh làm việc riêng (qua Zalo/Email) để bạn dễ dàng gửi các thông tin mới và chúng tôi chủ động lên kế hoạch cập nhật kiến thức cho AI.
+    - Huấn luyện kiến thức mới: Đội ngũ của chúng tôi sẽ liên tục "dạy" cho AI các thông tin bạn cung cấp, bao gồm:
+      - Bộ nguyên tắc giao tiếp: Tinh chỉnh văn phong, giọng điệu của AI để phù hợp với thương hiệu.
+      - Danh mục sản phẩm, dịch vụ: Cập nhật thông tin về sản phẩm mới, giá cả, chương trình khuyến mãi.
+      - Quy định & quy chế làm việc: Bổ sung các chính sách mới như chính sách bảo hành, đổi trả, giao hàng...
+      - Bộ câu hỏi thường gặp (FAQ): Liên tục xây dựng và mở rộng ngân hàng câu hỏi - trả lời cho các vấn đề khách hàng hay gặp phải để AI có thể giải đáp ngay lập tức.
+  3. Giám Sát & Tối Ưu Hiệu Suất Liên Tục:
+    - Chúng tôi sẽ chủ động phân tích các cuộc hội thoại của AI để xác định các "lỗ hổng" kiến thức hoặc những tình huống xử lý chưa tốt.
+    - Từ đó, chúng tôi sẽ tinh chỉnh lại kịch bản và kiến thức để Trợ lý AI ngày càng thông minh, tự nhiên và hiệu quả hơn.
+  4. Hỗ Trợ Kỹ Thuật Ưu Tiên:
+    - Mọi thắc mắc hay yêu cầu của bạn liên quan đến hoạt động của AI sẽ được ghi nhận và xử lý trong thời gian nhanh nhất qua kênh hỗ trợ riêng.
+- Cam Kết Về Sự Linh Hoạt & Hỗ Trợ Dài Hạn:
+  - Sẵn Sàng Bàn Giao Nhanh Chóng: Chúng tôi hiểu rằng bạn cần sự chủ động. Bất cứ khi nào bạn muốn tự mình vận hành, chúng tôi cam kết sẽ thực hiện quy trình bàn giao toàn bộ tài khoản Smax và các thông tin liên quan cho bạn trong vòng 24 giờ làm việc. Bạn không bao giờ bị "khóa chân" với dịch vụ của chúng tôi.
+  - Tiếp Tục Hỗ Trợ Cộng Đồng Lâu Dài: Ngay cả khi bạn quyết định ngưng Gói 3 để tự vận hành, bạn vẫn mãi là một thành viên quan trọng của cộng đồng ledacchien.com. Bạn sẽ tiếp tục được tham gia các nhóm Zalo/Facebook, các buổi Zoom hỗ trợ hàng tuần và nhận được các thông tin, ưu đãi về các khóa học liên quan.
+- Lợi ích lớn nhất: Tất cả những công việc và cam kết trên nhằm mang lại cho bạn sự An Tâm Tuyệt Đối. Bạn sở hữu một trợ lý AI mạnh mẽ, luôn được chăm sóc và phát triển bởi chuyên gia mà không cần tốn thời gian và công sức của mình, đồng thời vẫn giữ toàn quyền quyết định và được hỗ trợ dài lâu.
