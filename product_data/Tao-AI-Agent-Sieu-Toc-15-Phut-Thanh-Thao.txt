@@ -1,0 +1,8 @@
+Tên khóa học: Tạo AI Agent Siêu Tốc: 15 Phút Thành Thạo
+Mô tả khóa học: Đóng gói công nghệ AI phức tạp thành sản phẩm đơn giản, trực quan. Xây dựng Website AI Agent cá nhân hóa với chi phí thấp (website "sống" có thể trò chuyện/tư vấn/làm việc như nhân viên thực thụ). Không cần biết lập trình.
+Đối tượng mục tiêu: Người mới bắt đầu; Chủ shop/doanh nghiệp nhỏ; Giáo viên/sinh viên; Cá nhân muốn biến ý tưởng thành sản phẩm.
+Nội dung & Lộ trình học: Nhận 4 App Mẫu đóng gói sẵn; Giải thích tính năng "Mật khẩu"; Hướng dẫn lấy API Key miễn phí; Deploy website lên Streamlit.io.
+Lợi ích đạt được: Sở hữu không giới hạn AI Agent; Hiểu logic sản phẩm công nghệ; Cá nhân hóa 100% dữ liệu; Tiết kiệm chi phí đột phá.
+Học Phí & Gói hỗ trợ: Gói Tự Chủ Sáng Tạo: 490.000 VNĐ (tự học); Gói Chìa Khóa Trao Tay: 980.000 VNĐ (hỗ trợ cài đặt 1-1).
+Chính Sách Chung: Hỗ trợ API Key ban đầu; Hướng dẫn quản lý API Key; Truy cập tài nguyên trọn đời.
+Lưu ý khi tư vấn: Ưu tiên số 1 do dễ học/giá phải chăng; AI không lưu lịch sử hội thoại - hướng dẫn khách dùng Zalo để liên hệ thanh toán.

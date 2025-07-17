@@ -1,0 +1,9 @@
+Tên khóa học: Làm chủ AI Agent: Lập trình AI không cần biết code
+Mô tả khóa học: Tiếp cận Python qua phương pháp No-Code/Low-Code (kéo-thả hoặc chỉnh sửa code mẫu). Xây dựng Chatbot AI/AI Agent tự động hóa bán hàng/CSKH/học tập.
+Đối tượng mục tiêu: Người mới chưa từng lập trình; Học sinh/sinh viên chuyển ngành; Chủ doanh nghiệp SME; Cá nhân muốn xây dựng giải pháp AI thực tiễn.
+Công cụ & Sản phẩm: Python; Chatbot AI/AI Agent; Repo mã nguồn trên Github.
+Phương pháp học: Learning by Doing; Sử dụng ChatGPT/Gemini hỗ trợ; Video hướng dẫn + Zoom hàng tuần.
+Lộ trình thực hành: Giai đoạn 1: Triển khai trên Streamlit; Giai đoạn 2: Triển khai trên Heroku; Giai đoạn 3: Tham gia cộng đồng nâng cấp.
+Lợi ích đạt được: Phá bỏ nỗi sợ lập trình; Làm chủ tư duy No-Code; Thành thạo ChatGPT/Gemini/Python; Sở hữu kho tài nguyên thực chiến.
+Giá & Chính sách: 1.250.000 VNĐ; Truy cập tài nguyên trọn đời; Zoom hỗ trợ hàng tuần; Gia hạn miễn phí hàng năm.
+Lưu ý khi tư vấn: AI không lưu lịch sử hội thoại - hướng dẫn khách dùng Zalo để liên hệ thanh toán.
