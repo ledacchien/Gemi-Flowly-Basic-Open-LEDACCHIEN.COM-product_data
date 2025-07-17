@@ -127,15 +127,39 @@ def show_chatbot():
     # Định nghĩa các công cụ cho Gemini
     tools = [find_products, count_products_by_type]
     
-    # Lấy model và system prompt
+    # Lấy model
     model_name = rfile("module_gemini.txt").strip() or "gemini-1.5-pro-latest"
-    system_prompt = rfile("01.system_trainning.txt")
+    
+    # --- THAY ĐỔI BẮT ĐẦU TỪ ĐÂY ---
+    # 1. Tải câu lệnh hệ thống gốc
+    base_system_prompt = rfile("01.system_trainning.txt")
+    
+    # 2. Tải tất cả dữ liệu sản phẩm
+    all_products_data = get_all_products_as_dicts()
+    
+    # 3. Chuyển đổi dữ liệu sản phẩm thành một chuỗi và nối vào system prompt
+    if all_products_data:
+        # Tạo một phần header để AI biết đây là dữ liệu nền
+        product_data_string = "\nDưới đây là toàn bộ danh sách sản phẩm hệ thống mà bạn cần ghi nhớ để trả lời người dùng. Thông tin này là kiến thức nền của bạn:\n\n"
+        
+        # Thêm từng sản phẩm vào chuỗi, dùng dấu phân cách rõ ràng
+        for product in all_products_data:
+            product_data_string += "--- BẮT ĐẦU SẢN PHẨM ---\n"
+            product_data_string += product.get('original_content', '')
+            product_data_string += "\n--- KẾT THÚC SẢN PHẨM ---\n\n"
+            
+        # Nối vào prompt gốc
+        system_prompt = base_system_prompt + product_data_string
+    else:
+        # Nếu không có sản phẩm nào, dùng prompt gốc
+        system_prompt = base_system_prompt
+    # --- KẾT THÚC THAY ĐỔI ---
 
-    # Khởi tạo model
+    # Khởi tạo model với system_instruction đã được bổ sung dữ liệu
     model = genai.GenerativeModel(
         model_name=model_name,
         tools=tools,
-        system_instruction=system_prompt,
+        system_instruction=system_prompt, # Sử dụng prompt đã cập nhật
         safety_settings={ # Cài đặt an toàn
             HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
             HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
