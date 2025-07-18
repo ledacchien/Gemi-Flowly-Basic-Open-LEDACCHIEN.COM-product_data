@@ -91,7 +91,6 @@ def find_products(product_type: str = None, sort_key: str = None, sort_order: st
         is_descending = sort_order == 'desc'
         sorted_products = sorted(valid_products, key=lambda x: x[sort_key], reverse=is_descending)
         
-        # Xử lý trường hợp "rẻ nhất", "đắt nhất" (lấy tất cả sp có cùng giá trị top)
         if n_results == 1 and len(sorted_products) > 0:
             top_value = sorted_products[0][sort_key]
             top_products = [p for p in sorted_products if p.get(sort_key) == top_value]
@@ -99,7 +98,6 @@ def find_products(product_type: str = None, sort_key: str = None, sort_order: st
 
         return [p.get('original_content', '') for p in sorted_products[:n_results]]
 
-    # Trả về kết quả không sắp xếp nếu không có sort_key
     return [p.get('original_content', '') for p in products_to_process[:n_results]]
 
 def count_products_by_type(product_type: str = None):
@@ -112,10 +110,12 @@ def count_products_by_type(product_type: str = None):
 
 # --- LOGIC CHATBOT (GEMINI) ---
 def show_chatbot():
-    # Lấy API Key từ Streamlit Secrets
-    google_api_key = st.secrets.get("GOOGLE_API_KEY")
+    # Lấy API Key - Ưu tiên đọc từ st.secrets (cho local). 
+    # Nếu không có, đọc từ biến môi trường (cho Heroku).
+    google_api_key = st.secrets.get("GOOGLE_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+
     if not google_api_key:
-        st.error("Chưa có Google API Key. Vui lòng thiết lập trong Streamlit Secrets.")
+        st.error("Không tìm thấy Google API Key. Vui lòng thiết lập trong tệp .streamlit/secrets.toml (local) hoặc trong Config Vars (Heroku).")
         return
 
     try:
@@ -124,32 +124,21 @@ def show_chatbot():
         st.error(f"Lỗi khi cấu hình Gemini API Key: {e}")
         return
 
-    # Định nghĩa các công cụ cho Gemini
     tools = [find_products, count_products_by_type]
-    
-    # Lấy model
     model_name = rfile("module_gemini.txt").strip() or "gemini-1.5-pro-latest"
-    
-    # Tải câu lệnh hệ thống gốc từ thư mục system_data
     base_system_prompt = rfile("system_data/01.system_trainning.txt")
-    
-    # Tải tất cả dữ liệu sản phẩm
     all_products_data = get_all_products_as_dicts()
     
-    # Chuyển đổi dữ liệu sản phẩm thành một chuỗi và nối vào system prompt
     if all_products_data:
         product_data_string = "\nDưới đây là toàn bộ danh sách sản phẩm hệ thống mà bạn cần ghi nhớ để trả lời người dùng. Thông tin này là kiến thức nền của bạn:\n\n"
-        
         for product in all_products_data:
             product_data_string += "--- BẮT ĐẦU SẢN PHẨM ---\n"
             product_data_string += product.get('original_content', '')
             product_data_string += "\n--- KẾT THÚC SẢN PHẨM ---\n\n"
-            
         system_prompt = base_system_prompt + product_data_string
     else:
         system_prompt = base_system_prompt
 
-    # Khởi tạo model với system_instruction đã được bổ sung dữ liệu
     model = genai.GenerativeModel(
         model_name=model_name,
         tools=tools,
@@ -162,17 +151,14 @@ def show_chatbot():
         }
     )
 
-    # Khởi tạo lịch sử chat nếu chưa có
     if "chat" not in st.session_state or "messages" not in st.session_state:
         st.session_state.chat = model.start_chat()
         st.session_state.messages = [{"role": "assistant", "content": rfile("system_data/02.assistant.txt") or "Tôi có thể giúp gì cho bạn?"}]
 
-    # Hiển thị các tin nhắn cũ
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
-    # Xử lý input mới từ người dùng
     if prompt := st.chat_input("Bạn nhập nội dung cần trao đổi ở đây nhé?"):
         st.session_state.messages.append({"role": "user", "content": prompt})
         with st.chat_message("user"):
@@ -201,7 +187,6 @@ def show_chatbot():
                     final_response = response.text
                     st.markdown(final_response)
                     st.session_state.messages.append({"role": "assistant", "content": final_response})
-
                 except Exception as e:
                     st.error(f"Đã xảy ra lỗi với Gemini: {e}")
 
@@ -254,16 +239,12 @@ def main():
         st.divider()
         st.markdown("Một sản phẩm của [Lê Đắc Chiến](https://ledacchien.com)")
 
-    # CSS tùy chỉnh với Media Query cho responsive
     st.markdown("""<style>
-        /* CSS gốc cho desktop */
         [data-testid="stToolbar"], header, #MainMenu {visibility: hidden !important;}
         div[data-testid="stHorizontalBlock"]:has(div[data-testid="stChatMessageContent-user"]) { justify-content: flex-end; }
         div[data-testid="stChatMessage"]:has(div[data-testid="stChatMessageContent-user"]) { flex-direction: row-reverse; }
-
-        /* Định dạng cho box chứa ảnh bài viết trên desktop */
         .st-emotion-cache-1v0mbdj > div > div > div > div > div[data-testid="stVerticalBlock"] .stImage {
-            height: 150px; /* Chiều cao ảnh trên desktop */
+            height: 150px;
             width: 100%;
             overflow: hidden;
             border-radius: 0.5rem;
@@ -273,19 +254,13 @@ def main():
             width: 100%;
             object-fit: cover;
         }
-
-        /* --- CSS CHO THIẾT BỊ DI ĐỘNG --- */
-        /* Áp dụng các style này khi chiều rộng màn hình nhỏ hơn hoặc bằng 768px */
         @media (max-width: 768px) {
-            /* Giảm chiều cao của box chứa ảnh trên di động */
             .st-emotion-cache-1v0mbdj > div > div > div > div > div[data-testid="stVerticalBlock"] .stImage {
-                height: 100px; /* Chiều cao nhỏ hơn cho di động */
+                height: 100px;
             }
-
-            /* Giảm kích thước chữ của nút để vừa vặn hơn */
             .stButton > button {
-                font-size: 0.8rem; /* Font chữ nhỏ hơn */
-                padding: 0.3em 0.5em; /* Giảm padding cho nút */
+                font-size: 0.8rem;
+                padding: 0.3em 0.5em;
             }
         }
     </style>""", unsafe_allow_html=True)
