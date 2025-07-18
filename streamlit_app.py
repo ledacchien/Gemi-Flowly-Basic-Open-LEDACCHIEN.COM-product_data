@@ -111,7 +111,6 @@ def count_products_by_type(product_type: str = None):
 
 # --- LOGIC CHATBOT (GEMINI) ---
 def show_chatbot():
-    # --- ✨ PHẦN SỬA LỖI MỚI NHẤT ---
     google_api_key = None
     try:
         # Cố gắng đọc secrets từ file local trước
@@ -123,7 +122,6 @@ def show_chatbot():
     if not google_api_key:
         st.error("Không tìm thấy Google API Key. Vui lòng thiết lập trong tệp .streamlit/secrets.toml (local) hoặc trong Config Vars (Heroku).")
         return
-    # --- KẾT THÚC PHẦN SỬA ---
 
     try:
         genai.configure(api_key=google_api_key)
@@ -247,9 +245,12 @@ def main():
         st.markdown("Một sản phẩm của [Lê Đắc Chiến](https://ledacchien.com)")
 
     st.markdown("""<style>
+        /* CSS gốc */
         [data-testid="stToolbar"], header, #MainMenu {visibility: hidden !important;}
         div[data-testid="stHorizontalBlock"]:has(div[data-testid="stChatMessageContent-user"]) { justify-content: flex-end; }
         div[data-testid="stChatMessage"]:has(div[data-testid="stChatMessageContent-user"]) { flex-direction: row-reverse; }
+
+        /* Định dạng box ảnh bài viết */
         .st-emotion-cache-1v0mbdj > div > div > div > div > div[data-testid="stVerticalBlock"] .stImage {
             height: 150px;
             width: 100%;
@@ -261,6 +262,13 @@ def main():
             width: 100%;
             object-fit: cover;
         }
+
+        /* Sửa lỗi khoảng trắng trên di động */
+        [data-testid="stChatMessages"] {
+            min-height: 70vh;
+        }
+
+        /* CSS cho di động */
         @media (max-width: 768px) {
             .st-emotion-cache-1v0mbdj > div > div > div > div > div[data-testid="stVerticalBlock"] .stImage {
                 height: 100px;
