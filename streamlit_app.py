@@ -2,6 +2,7 @@ import streamlit as st
 from streamlit.components.v1 import html
 import google.generativeai as genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
+from streamlit.errors import StreamlitAPIException, StreamlitSecretNotFoundError
 import os
 import glob
 import json
@@ -110,13 +111,19 @@ def count_products_by_type(product_type: str = None):
 
 # --- LOGIC CHATBOT (GEMINI) ---
 def show_chatbot():
-    # Lấy API Key - Ưu tiên đọc từ st.secrets (cho local). 
-    # Nếu không có, đọc từ biến môi trường (cho Heroku).
-    google_api_key = st.secrets.get("GOOGLE_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+    # --- ✨ PHẦN SỬA LỖI MỚI NHẤT ---
+    google_api_key = None
+    try:
+        # Cố gắng đọc secrets từ file local trước
+        google_api_key = st.secrets.get("GOOGLE_API_KEY")
+    except (StreamlitAPIException, StreamlitSecretNotFoundError):
+        # Nếu lỗi (do chạy trên Heroku không có file), thì đọc từ biến môi trường
+        google_api_key = os.environ.get("GOOGLE_API_KEY")
 
     if not google_api_key:
         st.error("Không tìm thấy Google API Key. Vui lòng thiết lập trong tệp .streamlit/secrets.toml (local) hoặc trong Config Vars (Heroku).")
         return
+    # --- KẾT THÚC PHẦN SỬA ---
 
     try:
         genai.configure(api_key=google_api_key)
