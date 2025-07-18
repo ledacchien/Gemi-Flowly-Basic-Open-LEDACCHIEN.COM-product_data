@@ -130,37 +130,31 @@ def show_chatbot():
     # Lấy model
     model_name = rfile("module_gemini.txt").strip() or "gemini-1.5-pro-latest"
     
-    # --- THAY ĐỔI BẮT ĐẦU TỪ ĐÂY ---
-    # 1. Tải câu lệnh hệ thống gốc từ thư mục system_data
+    # Tải câu lệnh hệ thống gốc từ thư mục system_data
     base_system_prompt = rfile("system_data/01.system_trainning.txt")
     
-    # 2. Tải tất cả dữ liệu sản phẩm
+    # Tải tất cả dữ liệu sản phẩm
     all_products_data = get_all_products_as_dicts()
     
-    # 3. Chuyển đổi dữ liệu sản phẩm thành một chuỗi và nối vào system prompt
+    # Chuyển đổi dữ liệu sản phẩm thành một chuỗi và nối vào system prompt
     if all_products_data:
-        # Tạo một phần header để AI biết đây là dữ liệu nền
         product_data_string = "\nDưới đây là toàn bộ danh sách sản phẩm hệ thống mà bạn cần ghi nhớ để trả lời người dùng. Thông tin này là kiến thức nền của bạn:\n\n"
         
-        # Thêm từng sản phẩm vào chuỗi, dùng dấu phân cách rõ ràng
         for product in all_products_data:
             product_data_string += "--- BẮT ĐẦU SẢN PHẨM ---\n"
             product_data_string += product.get('original_content', '')
             product_data_string += "\n--- KẾT THÚC SẢN PHẨM ---\n\n"
             
-        # Nối vào prompt gốc
         system_prompt = base_system_prompt + product_data_string
     else:
-        # Nếu không có sản phẩm nào, dùng prompt gốc
         system_prompt = base_system_prompt
-    # --- KẾT THÚC THAY ĐỔI ---
 
     # Khởi tạo model với system_instruction đã được bổ sung dữ liệu
     model = genai.GenerativeModel(
         model_name=model_name,
         tools=tools,
-        system_instruction=system_prompt, # Sử dụng prompt đã cập nhật
-        safety_settings={ # Cài đặt an toàn
+        system_instruction=system_prompt,
+        safety_settings={
             HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
             HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
             HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE,
@@ -171,7 +165,6 @@ def show_chatbot():
     # Khởi tạo lịch sử chat nếu chưa có
     if "chat" not in st.session_state or "messages" not in st.session_state:
         st.session_state.chat = model.start_chat()
-        # Thay đổi đường dẫn tệp tin nhắn chào mừng
         st.session_state.messages = [{"role": "assistant", "content": rfile("system_data/02.assistant.txt") or "Tôi có thể giúp gì cho bạn?"}]
 
     # Hiển thị các tin nhắn cũ
@@ -185,23 +178,19 @@ def show_chatbot():
         with st.chat_message("user"):
             st.markdown(prompt)
 
-        # Gửi prompt cho Gemini và xử lý function calling
         with st.chat_message("assistant"):
             with st.spinner("Trợ lý đang suy nghĩ..."):
                 try:
                     response = st.session_state.chat.send_message(prompt)
-                    # Vòng lặp để xử lý các yêu cầu function call liên tiếp
                     while response.candidates[0].content.parts[0].function_call:
                         function_call = response.candidates[0].content.parts[0].function_call
                         function_name = function_call.name
                         function_args = dict(function_call.args)
                         
-                        # Gọi hàm Python tương ứng
                         available_functions = {"find_products": find_products, "count_products_by_type": count_products_by_type}
                         function_to_call = available_functions[function_name]
                         function_response = function_to_call(**function_args)
                         
-                        # Gửi kết quả của hàm về lại cho Gemini
                         response = st.session_state.chat.send_message(
                             genai.Part.from_function_response(
                                 name=function_name,
@@ -209,7 +198,6 @@ def show_chatbot():
                             )
                         )
                     
-                    # Hiển thị câu trả lời cuối cùng
                     final_response = response.text
                     st.markdown(final_response)
                     st.session_state.messages.append({"role": "assistant", "content": final_response})
@@ -220,7 +208,6 @@ def show_chatbot():
 # --- CÁC HÀM GIAO DIỆN ---
 def show_main_page():
     st.subheader("✨ Các bài viết nổi bật")
-    # Đường dẫn hình ảnh và tệp tiêu đề không thay đổi
     default_images = ["03bai_viet/article_images/pic1.jpg", "03bai_viet/article_images/pic2.jpg", "03bai_viet/article_images/pic3.jpg"]
     default_titles = ["Tiêu đề bài viết 1", "Tiêu đề bài viết 2", "Tiêu đề bài viết 3"]
     image_paths = [path if os.path.exists(path) else f"https://placehold.co/400x267/a3e635/44403c?text=Thiếu+ảnh+{i+1}" for i, path in enumerate(default_images)]
@@ -235,10 +222,7 @@ def show_main_page():
                 st.rerun()
 
     st.divider()
-    # Thay đổi đường dẫn logo và tệp chào mừng
     if os.path.exists("system_data/logo.png"):
-        # Sử dụng cột để căn giữa và thay đổi kích thước logo
-        # Thay đổi tỷ lệ thành [1,1,1] để logo to hơn
         logo_col1, logo_col2, logo_col3 = st.columns([1,1,1])
         with logo_col2:
             st.image("system_data/logo.png", use_container_width=True)
@@ -258,31 +242,53 @@ def show_article_page(article_number):
         st.error(f"Lỗi: Không tìm thấy file bài viết số {article_number}.")
 
 def main():
-    # Thay đổi layout thành "wide" để có không gian cho sidebar
     st.set_page_config(page_title="Trợ lý AI", page_icon="🤖", layout="wide")
 
-    # --- BỔ SUNG THANH BÊN (SIDEBAR) ---
     with st.sidebar:
         st.title("⚙️ Tùy chọn")
         if st.button("🗑️ Xóa cuộc trò chuyện"):
-            # Xóa lịch sử chat và đối tượng chat khỏi session state
             if "chat" in st.session_state: del st.session_state.chat
             if "messages" in st.session_state: del st.session_state.messages
-            # Quay về trang chính để bắt đầu lại
             st.session_state.view = "main"
             st.rerun()
         st.divider()
         st.markdown("Một sản phẩm của [Lê Đắc Chiến](https://ledacchien.com)")
 
-
-    # CSS tùy chỉnh
+    # CSS tùy chỉnh với Media Query cho responsive
     st.markdown("""<style>
+        /* CSS gốc cho desktop */
         [data-testid="stToolbar"], header, #MainMenu {visibility: hidden !important;}
         div[data-testid="stHorizontalBlock"]:has(div[data-testid="stChatMessageContent-user"]) { justify-content: flex-end; }
         div[data-testid="stChatMessage"]:has(div[data-testid="stChatMessageContent-user"]) { flex-direction: row-reverse; }
-        .st-emotion-cache-1v0mbdj > div > div > div > div > div[data-testid="stVerticalBlock"] .stImage { height: 150px; width: 100%; overflow: hidden; border-radius: 0.5rem; }
-        .st-emotion-cache-1v0mbdj > div > div > div > div > div[data-testid="stVerticalBlock"] .stImage img { height: 100%; width: 100%; object-fit: cover; }
-    </style>""", unsafe_allow_html=True) 
+
+        /* Định dạng cho box chứa ảnh bài viết trên desktop */
+        .st-emotion-cache-1v0mbdj > div > div > div > div > div[data-testid="stVerticalBlock"] .stImage {
+            height: 150px; /* Chiều cao ảnh trên desktop */
+            width: 100%;
+            overflow: hidden;
+            border-radius: 0.5rem;
+        }
+        .st-emotion-cache-1v0mbdj > div > div > div > div > div[data-testid="stVerticalBlock"] .stImage img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        /* --- CSS CHO THIẾT BỊ DI ĐỘNG --- */
+        /* Áp dụng các style này khi chiều rộng màn hình nhỏ hơn hoặc bằng 768px */
+        @media (max-width: 768px) {
+            /* Giảm chiều cao của box chứa ảnh trên di động */
+            .st-emotion-cache-1v0mbdj > div > div > div > div > div[data-testid="stVerticalBlock"] .stImage {
+                height: 100px; /* Chiều cao nhỏ hơn cho di động */
+            }
+
+            /* Giảm kích thước chữ của nút để vừa vặn hơn */
+            .stButton > button {
+                font-size: 0.8rem; /* Font chữ nhỏ hơn */
+                padding: 0.3em 0.5em; /* Giảm padding cho nút */
+            }
+        }
+    </style>""", unsafe_allow_html=True)
     
     if "view" not in st.session_state: 
         st.session_state.view = "main"
