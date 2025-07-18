@@ -236,7 +236,7 @@ def show_main_page():
 
     st.divider()
     # Thay đổi đường dẫn logo và tệp chào mừng
-    if os.path.exists("system_data/logo.jpg"): st.image("system_data/logo.jpg")
+    if os.path.exists("system_data/logo.png"): st.image("system_data/logo.png")
     st.markdown(f"<h2 style='text-align: center;'>{rfile('system_data/00.xinchao.txt') or 'Chào mừng đến với Trợ lý AI'}</h2>", unsafe_allow_html=True)
     show_chatbot()
 
