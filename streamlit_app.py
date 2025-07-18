@@ -237,10 +237,10 @@ def show_main_page():
     st.divider()
     # Thay đổi đường dẫn logo và tệp chào mừng
     if os.path.exists("system_data/logo.png"):
-        # Sử dụng cột để căn giữa và thu nhỏ logo một cách responsive
-        logo_col1, logo_col2, logo_col3 = st.columns([2,1,2])
+        # Sử dụng cột để căn giữa và thay đổi kích thước logo
+        # Thay đổi tỷ lệ thành [1,1,1] để logo to hơn
+        logo_col1, logo_col2, logo_col3 = st.columns([1,1,1])
         with logo_col2:
-            # SỬA LỖI: Thay thế use_column_width bằng use_container_width theo khuyến nghị của Streamlit
             st.image("system_data/logo.png", use_container_width=True)
 
     st.markdown(f"<h2 style='text-align: center;'>{rfile('system_data/00.xinchao.txt') or 'Chào mừng đến với Trợ lý AI'}</h2>", unsafe_allow_html=True)
@@ -258,7 +258,23 @@ def show_article_page(article_number):
         st.error(f"Lỗi: Không tìm thấy file bài viết số {article_number}.")
 
 def main():
-    st.set_page_config(page_title="Trợ lý AI", page_icon="🤖", layout="centered")
+    # Thay đổi layout thành "wide" để có không gian cho sidebar
+    st.set_page_config(page_title="Trợ lý AI", page_icon="🤖", layout="wide")
+
+    # --- BỔ SUNG THANH BÊN (SIDEBAR) ---
+    with st.sidebar:
+        st.title("⚙️ Tùy chọn")
+        if st.button("🗑️ Xóa cuộc trò chuyện"):
+            # Xóa lịch sử chat và đối tượng chat khỏi session state
+            if "chat" in st.session_state: del st.session_state.chat
+            if "messages" in st.session_state: del st.session_state.messages
+            # Quay về trang chính để bắt đầu lại
+            st.session_state.view = "main"
+            st.rerun()
+        st.divider()
+        st.markdown("Một sản phẩm của [Lê Đắc Chiến](https://ledacchien.com)")
+
+
     # CSS tùy chỉnh
     st.markdown("""<style>
         [data-testid="stToolbar"], header, #MainMenu {visibility: hidden !important;}
