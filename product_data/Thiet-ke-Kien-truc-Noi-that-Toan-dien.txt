@@ -1,6 +1,6 @@
 # Khóa học: Thiết kế Kiến trúc & Nội thất Toàn diện
 
-# Khóa học này đang trong thời gian xây dựng nội dung nên chưa triển khai bán kháo học
+# Hãy nói với khách hàng là khóa học này đang trong thời gian xây dựng nội dung nên chưa triển khai bán kháo học
 
 # Link sản phẩm:
 * Link: https://ledacchien.com/khoa-hoc-autocad-sketchup-co-ban-danh-cho-nguoi-moi-bo-thu-vien-moi-nhat
