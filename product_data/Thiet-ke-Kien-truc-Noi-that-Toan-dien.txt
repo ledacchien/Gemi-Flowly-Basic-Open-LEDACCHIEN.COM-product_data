@@ -1,33 +1,46 @@
-Khóa học: Thiết kế Kiến trúc & Nội thất Toàn diện 
+# Khóa học: Thiết kế Kiến trúc & Nội thất Toàn diện
 
-Mô tả khóa học:
-  Không chỉ dạy phần mềm, khóa học này là một giải pháp toàn diện giúp bạn tạo ra sản phẩm thuyết trình ấn tượng để chốt hợp đồng và nâng cao giá trị thương hiệu cá nhân. Khóa học chuyên sâu trang bị kiến thức và kỹ năng toàn diện từ cơ bản đến nâng cao, đủ để học viên tự tin thực hiện các dự án bản vẽ trong lĩnh vực thiết kế kiến trúc và nội thất.
-Đối tượng mục tiêu: 
-Sinh viên, kiến trúc sư, kỹ sư, nhà thiết kế nội thất, hoặc bất kỳ cá nhân/doanh nghiệp nào mong muốn học hỏi và nâng cao kỹ năng thiết kế, dựng hình 3D và trình bày chuyên nghiệp để tối ưu hóa công việc.
-Công cụ học tập & Ứng dụng:
-  - AutoCAD: Làm chủ kỹ năng vẽ kỹ thuật 2D chính xác và hiệu quả với các lệnh và thao tác cơ bản nhất.
-  - SketchUp: Đào tạo dựng hình 3D nhanh chóng, linh hoạt và dễ hiểu.
-  - Enscape: Hướng dẫn kết xuất (render) hình ảnh và video chất lượng cao, chuyên nghiệp – đây là điểm nhấn giúp học viên tăng hiệu quả kinh doanh và xây dựng thương hiệu cá nhân.
-  - Ứng dụng bổ trợ: Lồng ghép hướng dẫn sử dụng CapCut và Canva để tối ưu hóa việc biên tập và trình bày sản phẩm video/ảnh thiết kế.
-Tài nguyên đi kèm:
-  - Bộ thư viện model thiết kế 2D, 3D đa dạng (đồ nội thất, cây cối, con người, vật liệu...) tương ứng với từng ứng dụng, giúp tiết kiệm thời gian và nâng cao chất lượng sản phẩm.
-  - Các file mẫu và bài tập thực hành đi kèm theo từng module học.
-Phương pháp & Hình thức học:
-  - Video khóa học cơ bản: Học viên chủ động học theo lộ trình được thiết kế sẵn, linh hoạt về thời gian.
-  - Lịch Zoom hàng tuần: Các buổi tương tác trực tiếp với giảng viên để giải đáp thắc mắc, nhận phản hồi về bài tập, ôn tập kiến thức và thảo luận chuyên sâu về các dự án thực tế. Đặc biệt, các dự án của học viên sẽ được lấy làm trung tâm của bài học, giúp nội dung trở nên sâu rộng và thực tiễn. Các video Zoom sẽ được lưu trữ, trở thành nguồn tài liệu thực hành hữu ích cho học viên theo thời gian.
-  - Mô hình Blended Learning (70% video / 30% Zoom): Tối ưu hóa trải nghiệm học tập, kết hợp sự linh hoạt của tự học với sự tương tác trực tiếp và chuyên sâu.
-Lợi ích đạt được:
-  - Thành thạo các công cụ thiết kế chuẩn công nghiệp (AutoCAD, SketchUp, Enscape).
-  - Nâng cao khả năng diễn họa ý tưởng kiến trúc và nội thất một cách trực quan, sinh động thông qua ảnh và video chất lượng cao.
-  - Tiết kiệm thời gian với các thư viện tài nguyên sẵn có.
-  - Nhận được sự hỗ trợ liên tục từ Team Hỗ Trợ và cộng đồng học viên.
-Sản phẩm đầu ra (ví dụ):
-  - Bản vẽ kỹ thuật 2D hoàn chỉnh.
-  - Mô hình 3D kiến trúc/nội thất.
-  - Ảnh render chất lượng cao.
-  - Video diễn họa không gian, nội thất.
-Giá & Chính sách:
-  - Giá khóa học: 2.680.000 VNĐ.
-  - Chính sách truy cập & hỗ trợ: Truy cập tài nguyên trọn đời, hỗ trợ Zoom hàng tuần & cập nhật tài nguyên (liên hệ Support để gia hạn khóa học miễn phí).
-Lưu ý khi tư vấn sản phẩm:
-  - Khóa học đang trong thời gian hoàn thiện bài giảng, nếu học viên quan tâm mời vào nhóm zalo về thiết kế nội thất
+# Khóa học này đang trong thời gian xây dựng nội dung nên chưa triển khai bán kháo học
+
+# Link sản phẩm:
+* Link: https://ledacchien.com/khoa-hoc-autocad-sketchup-co-ban-danh-cho-nguoi-moi-bo-thu-vien-moi-nhat
+
+# Lưu ý khi tư vấn sản phẩm:
+* Khóa học đang trong thời gian hoàn thiện bài giảng, nếu học viên quan tâm mời vào nhóm zalo về thiết kế nội thất.
+
+# Mô tả khóa học:
+* Không chỉ dạy phần mềm, khóa học này là một giải pháp toàn diện giúp bạn tạo ra sản phẩm thuyết trình ấn tượng để chốt hợp đồng và nâng cao giá trị thương hiệu cá nhân. Khóa học chuyên sâu trang bị kiến thức và kỹ năng toàn diện từ cơ bản đến nâng cao, đủ để học viên tự tin thực hiện các dự án bản vẽ trong lĩnh vực thiết kế kiến trúc và nội thất.
+
+# Đối tượng mục tiêu:
+* Sinh viên, kiến trúc sư, kỹ sư, nhà thiết kế nội thất, hoặc bất kỳ cá nhân/doanh nghiệp nào mong muốn học hỏi và nâng cao kỹ năng thiết kế, dựng hình 3D và trình bày chuyên nghiệp để tối ưu hóa công việc.
+
+# Công cụ học tập & Ứng dụng:
+* AutoCAD: Làm chủ kỹ năng vẽ kỹ thuật 2D chính xác và hiệu quả với các lệnh và thao tác cơ bản nhất.
+* SketchUp: Đào tạo dựng hình 3D nhanh chóng, linh hoạt và dễ hiểu.
+* Enscape: Hướng dẫn kết xuất (render) hình ảnh và video chất lượng cao, chuyên nghiệp – đây là điểm nhấn giúp học viên tăng hiệu quả kinh doanh và xây dựng thương hiệu cá nhân.
+* Ứng dụng bổ trợ: Lồng ghép hướng dẫn sử dụng CapCut và Canva để tối ưu hóa việc biên tập và trình bày sản phẩm video/ảnh thiết kế.
+
+# Tài nguyên đi kèm:
+* Bộ thư viện model thiết kế 2D, 3D đa dạng (đồ nội thất, cây cối, con người, vật liệu...) tương ứng với từng ứng dụng, giúp tiết kiệm thời gian và nâng cao chất lượng sản phẩm.
+* Các file mẫu và bài tập thực hành đi kèm theo từng module học.
+
+# Phương pháp & Hình thức học:
+* Video khóa học cơ bản: Học viên chủ động học theo lộ trình được thiết kế sẵn, linh hoạt về thời gian.
+* Lịch Zoom hàng tuần: Các buổi tương tác trực tiếp với giảng viên để giải đáp thắc mắc, nhận phản hồi về bài tập, ôn tập kiến thức và thảo luận chuyên sâu về các dự án thực tế. Đặc biệt, các dự án của học viên sẽ được lấy làm trung tâm của bài học, giúp nội dung trở nên sâu rộng và thực tiễn. Các video Zoom sẽ được lưu trữ, trở thành nguồn tài liệu thực hành hữu ích cho học viên theo thời gian.
+* Mô hình Blended Learning (70% video / 30% Zoom): Tối ưu hóa trải nghiệm học tập, kết hợp sự linh hoạt của tự học với sự tương tác trực tiếp và chuyên sâu.
+
+# Lợi ích đạt được:
+* Thành thạo các công cụ thiết kế chuẩn công nghiệp (AutoCAD, SketchUp, Enscape).
+* Nâng cao khả năng diễn họa ý tưởng kiến trúc và nội thất một cách trực quan, sinh động thông qua ảnh và video chất lượng cao.
+* Tiết kiệm thời gian với các thư viện tài nguyên sẵn có.
+* Nhận được sự hỗ trợ liên tục từ Team Hỗ Trợ và cộng đồng học viên.
+
+# Sản phẩm đầu ra (ví dụ):
+* Bản vẽ kỹ thuật 2D hoàn chỉnh.
+* Mô hình 3D kiến trúc/nội thất.
+* Ảnh render chất lượng cao.
+* Video diễn họa không gian, nội thất.
+
+# Giá & Chính sách:
+* Giá khóa học: 2.680.000 VNĐ.
+* Chính sách truy cập & hỗ trợ: Truy cập tài nguyên trọn đời, hỗ trợ Zoom hàng tuần & cập nhật tài nguyên (liên hệ Support để gia hạn khóa học miễn phí).

@@ -1,37 +1,77 @@
-Khóa học: Làm chủ AI Agent - Lập trình AI không cần biết code
+# Khóa học: Làm chủ AI Agent - Lập trình AI không cần biết code
 
-Mô tả khóa học:
-  - Đột phá cho người mới bắt đầu: Khóa học giúp bạn tiếp cận lập trình Python – ngôn ngữ phổ biến nhất, nền tảng quan trọng trong lĩnh vực trí tuệ nhân tạo hiện nay.
-  - No-Code/Low-Code: Bạn không cần biết lập trình vẫn có thể tự tạo, chỉnh sửa, triển khai các ứng dụng AI Agent, sử dụng phương pháp kéo-thả hoặc chỉnh sửa code mẫu có sẵn.
-  - Trọng tâm: Hướng dẫn bạn xây dựng các Chatbot AI, AI Agent, tự động hóa quy trình bán hàng, CSKH hoặc phục vụ mục đích học tập/nghiên cứu AI.
-  - Đặc biệt: Mọi tài nguyên, bài giảng, mã nguồn Python đều được hướng dẫn từ A-Z, chi tiết từng bước, giải thích bằng ngôn ngữ đơn giản, thân thiện.
-  - Kết hợp học qua dự án: Bạn sẽ không chỉ học lý thuyết, mà được thực hành trên repo mẫu, phát triển dự án thực tế và nhận phản hồi trực tiếp từ giảng viên.
-Đối tượng mục tiêu:
-  - Người hoàn toàn mới, chưa từng lập trình: Những ai từng sợ code, từng nghĩ rằng lập trình là quá khó.
-  - Học sinh, sinh viên, người đi làm muốn chuyển ngành: Những ai muốn đổi nghề, nâng cấp kỹ năng để phù hợp với thị trường lao động AI.
-  - Chủ doanh nghiệp (SMBs), freelancer, cá nhân kinh doanh: Những người cần ứng dụng AI để tự động hóa mà không cần học lập trình truyền thống.
-  - Bất kỳ ai muốn nhanh chóng xây dựng giải pháp AI thực tiễn: Không cần nền tảng IT, chỉ cần biết sử dụng máy tính cơ bản.
-Công cụ & Sản phẩm:
-  - Python: Công cụ trung tâm của khóa học.
-  - Chatbot AI/AI Agent: Sản phẩm thực tế bạn sẽ tự tạo ra.
-  - Repo mã nguồn trên Github: Được cấp quyền truy cập kho mã nguồn Python chuẩn để tùy biến, học tập và phát triển.
-Phương pháp học:
-  - Learning by Doing – Học qua thực hành: Hướng dẫn cầm tay chỉ việc, thực hành từng thao tác. Có các bài tập thực tế, checklist, dự án nhỏ.
-  - Tận dụng AI hiện đại: Hướng dẫn sử dụng ChatGPT, Gemini, và các công cụ AI phổ biến để tăng tốc học tập.
-  - Video hướng dẫn chi tiết, hỗ trợ Zoom hàng tuần: Kết hợp giữa tự học và tham gia các buổi Q&A/Workshop trực tuyến.
-Lộ trình thực hành theo 3 giai đoạn:
-  - Giai đoạn 1: Triển khai AI Agent miễn phí trên nền tảng Streamlit: Được cung cấp repo Python chuẩn, deploy app trực tiếp trên streamlit.io.
-  - Giai đoạn 2: Triển khai trên Heroku để cá nhân hóa: Hướng dẫn deploy app lên Heroku, tích hợp tên miền riêng, tùy biến giao diện.
-  - Giai đoạn 3: Tham gia cộng đồng, thảo luận và nâng cấp: Hỗ trợ trao đổi ý tưởng, thảo luận kịch bản, mở rộng tính năng, review code, tối ưu giải pháp.
-Lợi ích đạt được:
-  - Phá bỏ nỗi sợ lập trình.
-  - Chủ động xây dựng và sở hữu sản phẩm công nghệ AI thực thụ.
-  - Làm chủ tư duy No-Code/Low-Code, tiết kiệm chi phí thuê ngoài.
-  - Thành thạo các công cụ lớn như ChatGPT, Gemini, Python.
-  - Mở rộng năng lực cá nhân, tăng lợi thế cạnh tranh.
-  - Sở hữu kho tài nguyên, mã nguồn, quy trình mẫu thực chiến.
-Giá & Chính sách:
-  - Học phí trọn gói: 1.250.000 VNĐ (chưa bao gồm các tùy chọn nâng cấp, nếu có).
-  - Chính sách truy cập & hỗ trợ: Học viên được truy cập tài nguyên trọn đời, cập nhật tài liệu mới, tham gia Zoom hỗ trợ hàng tuần. Hỗ trợ gia hạn khóa học miễn phí từng năm. Mọi chi phí nâng cấp nền tảng đều minh bạch.
-Lưu ý khi tư vấn sản phẩm:
-  - App AI Agent này không hỗ trợ theo dõi và lưu lại cuộc hội thoại của AI và Khách hàng, tuy nhiên có thể thuyết phục khách rằng hãy tận dụng huấn luyện để AI agent gửi link zalo, nhóm zalo và thuyết phục khách hàng ghi nhớ thông tin sản phẩm và dịch vụ, chụp màn hình để vào zalo, nhóm zalo để liên hệ thanh toán
+# Khóa học này đang trong thời gian xây dựng nội dung nên chưa triển khai bán kháo học
+
+# Link sản phẩm:
+
+* Link: https://ledacchien.com/lap-trinh-ai-khoi-dau-hoan-hao-tao-tro-ly-ai-bang-python-co-san
+
+# Mô tả khóa học:
+
+* Đột phá cho người mới bắt đầu: Khóa học giúp bạn tiếp cận lập trình Python – ngôn ngữ phổ biến nhất, nền tảng quan trọng trong lĩnh vực trí tuệ nhân tạo hiện nay.
+
+* No-Code/Low-Code: Bạn không cần biết lập trình vẫn có thể tự tạo, chỉnh sửa, triển khai các ứng dụng AI Agent, sử dụng phương pháp kéo-thả hoặc chỉnh sửa code mẫu có sẵn.
+
+* Trọng tâm: Hướng dẫn bạn xây dựng các Chatbot AI, AI Agent, tự động hóa quy trình bán hàng, CSKH hoặc phục vụ mục đích học tập/nghiên cứu AI.
+
+* Đặc biệt: Mọi tài nguyên, bài giảng, mã nguồn Python đều được hướng dẫn từ A-Z, chi tiết từng bước, giải thích bằng ngôn ngữ đơn giản, thân thiện.
+
+* Kết hợp học qua dự án: Bạn sẽ không chỉ học lý thuyết, mà được thực hành trên repo mẫu, phát triển dự án thực tế và nhận phản hồi trực tiếp từ giảng viên.
+
+# Đối tượng mục tiêu:
+
+* Người hoàn toàn mới, chưa từng lập trình: Những ai từng sợ code, từng nghĩ rằng lập trình là quá khó.
+
+* Học sinh, sinh viên, người đi làm muốn chuyển ngành: Những ai muốn đổi nghề, nâng cấp kỹ năng để phù hợp với thị trường lao động AI.
+
+* Chủ doanh nghiệp (SMBs), freelancer, cá nhân kinh doanh: Những người cần ứng dụng AI để tự động hóa mà không cần học lập trình truyền thống.
+
+* Bất kỳ ai muốn nhanh chóng xây dựng giải pháp AI thực tiễn: Không cần nền tảng IT, chỉ cần biết sử dụng máy tính cơ bản.
+
+# Công cụ & Sản phẩm:
+
+* Python: Công cụ trung tâm của khóa học.
+
+* Chatbot AI/AI Agent: Sản phẩm thực tế bạn sẽ tự tạo ra.
+
+* Repo mã nguồn trên Github: Được cấp quyền truy cập kho mã nguồn Python chuẩn để tùy biến, học tập và phát triển.
+
+# Phương pháp học:
+
+* Learning by Doing – Học qua thực hành: Hướng dẫn cầm tay chỉ việc, thực hành từng thao tác. Có các bài tập thực tế, checklist, dự án nhỏ.
+
+* Tận dụng AI hiện đại: Hướng dẫn sử dụng ChatGPT, Gemini, và các công cụ AI phổ biến để tăng tốc học tập.
+
+* Video hướng dẫn chi tiết, hỗ trợ Zoom hàng tuần: Kết hợp giữa tự học và tham gia các buổi Q&A/Workshop trực tuyến.
+
+# Lộ trình thực hành theo 3 giai đoạn:
+
+* Giai đoạn 1: Triển khai AI Agent miễn phí trên nền tảng Streamlit: Được cung cấp repo Python chuẩn, deploy app trực tiếp trên streamlit.io.
+
+* Giai đoạn 2: Triển khai trên Heroku để cá nhân hóa: Hướng dẫn deploy app lên Heroku, tích hợp tên miền riêng, tùy biến giao diện.
+
+* Giai đoạn 3: Tham gia cộng đồng, thảo luận và nâng cấp: Hỗ trợ trao đổi ý tưởng, thảo luận kịch bản, mở rộng tính năng, review code, tối ưu giải pháp.
+
+# Lợi ích đạt được:
+
+* Phá bỏ nỗi sợ lập trình.
+
+* Chủ động xây dựng và sở hữu sản phẩm công nghệ AI thực thụ.
+
+* Làm chủ tư duy No-Code/Low-Code, tiết kiệm chi phí thuê ngoài.
+
+* Thành thạo các công cụ lớn như ChatGPT, Gemini, Python.
+
+* Mở rộng năng lực cá nhân, tăng lợi thế cạnh tranh.
+
+* Sở hữu kho tài nguyên, mã nguồn, quy trình mẫu thực chiến.
+
+# Giá & Chính sách:
+
+* Học phí trọn gói: 1.250.000 VNĐ (chưa bao gồm các tùy chọn nâng cấp, nếu có).
+
+* Chính sách truy cập & hỗ trợ: Học viên được truy cập tài nguyên trọn đời, cập nhật tài liệu mới, tham gia Zoom hỗ trợ hàng tuần. Hỗ trợ gia hạn khóa học miễn phí từng năm. Mọi chi phí nâng cấp nền tảng đều minh bạch.
+
+# Lưu ý khi tư vấn sản phẩm:
+
+* App AI Agent này không hỗ trợ theo dõi và lưu lại cuộc hội thoại của AI và Khách hàng, tuy nhiên có thể thuyết phục khách rằng hãy tận dụng huấn luyện để AI agent gửi link zalo, nhóm zalo và thuyết phục khách hàng ghi nhớ thông tin sản phẩm và dịch vụ, chụp màn hình để vào zalo, nhóm zalo để liên hệ thanh toán.

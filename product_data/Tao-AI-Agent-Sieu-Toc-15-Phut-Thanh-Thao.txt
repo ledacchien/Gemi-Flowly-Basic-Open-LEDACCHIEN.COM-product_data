@@ -1,50 +1,55 @@
-Khóa học: Tạo AI Agent Siêu Tốc 15 Phút Thành Thạo
-Nhấn mạnh đây là khóa học rất thú vị và hữu ích, chỉ có AI mới có thể hỗ trợ chúng ta tiếp cận với công nghệ một cách kỳ diệu như thế này, cơ hội trải nghiệm huấn luyện AI với chi phí gần nhưu 0 đồng
+# Khóa học: Tạo AI Agent Siêu Tốc 15 Phút Thành Thạo
 
-Mô tả khóa học:
-  - Tin vui cho bạn đây! Chúng tôi đã "đóng gói" thành công công nghệ AI phức tạp thành một sản phẩm đơn giản, trực quan và sẵn sàng chuyển giao cho bạn.
-  - Khóa học này sẽ biến điều không thể thành có thể: tự tay xây dựng một Website AI Agent của riêng bạn với chi phí thấp không tưởng. (Ghi chú: Đây không phải website thông thường chỉ để hiển thị thông tin, mà là một website "sống" có thể trò chuyện, tư vấn, báo giá và làm việc cho bạn như một nhân viên thực thụ).
-  - Bạn sẽ phải ngạc nhiên với sản phẩm mình nhận được, một giá trị chưa từng có mà chỉ có thể xuất hiện trong cuộc cách mạng AI này. Chúng tôi sẽ hướng dẫn bạn bằng ngôn ngữ Tiếng Việt tự nhiên, không phải thuật ngữ lập trình khô khan, để bạn sở hữu ngay một AI Agent cá nhân hóa – trợ lý ảo của riêng bạn, được huấn luyện bằng kiến thức của bạn, không phải một công cụ công cộng như ChatGPT.
-  - (Không cần biết lập trình – Không giới hạn số lượng – Chi phí duy nhất là học phí).
-Đối tượng mục tiêu:
-  - Người mới bắt đầu, chưa từng biết lập trình, muốn tự tay làm chủ công nghệ AI một cách dễ dàng nhất.
-  - Chủ shop, doanh nghiệp nhỏ, freelancer, marketer: Muốn có một "nhân viên số" làm việc 24/7 để bán hàng và chăm sóc khách hàng mà không tốn chi phí vận hành.
-  - Giáo viên, sinh viên: Muốn tạo trợ lý học tập cá nhân, giúp tóm tắt tài liệu và giải đáp thắc mắc.
-  - Bất kỳ ai muốn biến ý tưởng kinh doanh thành sản phẩm thật một cách nhanh chóng.
-Nội dung & Lộ trình học:
-  - Nhận 4 App Mẫu (Kho Mã Nguồn) Đã Đóng Gói Sẵn: Bạn được cấp quyền truy cập vào 4 bộ ứng dụng đã được lập trình sẵn. (Ghi chú: "Kho mã nguồn" giống như một ngôi nhà đã xây xong phần thô. Bạn không cần quan tâm đến gạch vữa, xi măng mà chỉ việc vào "trang trí" nội thất và sử dụng ngay).
-    - Loại 1 & 2: AI Chatbot Cơ bản (Công khai / Có mật khẩu): Một trợ lý ảo trò chuyện tinh gọn.
-    - Loại 3 & 4: Website Tích Hợp AI (Công khai / Có mật khẩu): Một trang web hoàn chỉnh, có cả AI Chatbot và các khu vực để bạn giới thiệu sản phẩm, dịch vụ.
-  - Giải Thích Về Tính Năng "Mật Khẩu":
-    - (Ghi chú: Phiên bản có mật khẩu dùng để làm gì?) Đây là tính năng cực kỳ giá trị để bạn tạo ra các công cụ dùng riêng cho nội bộ hoặc cung cấp cho nhóm khách hàng đặc biệt. Bạn có thể huấn luyện AI các thông tin nhạy cảm như: bảng giá sỉ, quy trình báo giá, tài liệu đào tạo nhân viên, bí quyết kinh doanh... mà không sợ bị lộ ra ngoài.
-  - Bí Quyết Sử Dụng Nền Tảng & Lấy "Chìa Khóa" API Miễn Phí:
-    - Chúng tôi sẽ hé lộ cách lấy API key – chiếc chìa khóa quyền năng – để bạn sử dụng trí tuệ của các mô hình AI hàng đầu thế giới hoàn toàn miễn phí.
-    - (Ghi chú: "API Key" là gì? Hãy tưởng tượng nó là một chiếc thẻ khóa cho phép ứng dụng của bạn "mở cửa" và sử dụng sức mạnh của một "bộ não AI" khổng lồ trị giá hàng tỷ đô mà bạn không cần phải tự xây dựng).
-  - Video hướng dẫn chi tiết cách tải toàn bộ app mẫu bạn chọn về máy tính của mình.
-  - "Xuất Bản" Website Của Bạn Lên Internet (Deploy):
-    - Video bài giảng sẽ chỉ cho bạn cách deploy ứng dụng lên nền tảng Streamlit.io.
-    - (Ghi chú: "Deploy" đơn giản là hành động "đưa website" của bạn từ máy tính cá nhân lên mạng Internet, để bất kỳ ai có đường link cũng có thể truy cập, giống như một website chuyên nghiệp).
-    - Bạn sẽ có ngay một website với địa chỉ riêng miễn phí (ví dụ: ten-cua-hang-cua-ban.streamlit.app), hoạt động 24/7 mà không cần trả tiền hosting hàng tháng.
-Lợi ích đạt được:
-  - Sở hữu một đội quân AI Agent cho riêng mình: Bạn có toàn quyền tạo ra không giới hạn số lượng AI Agent miễn phí. Mỗi trợ lý ảo đảm nhận một vai trò chuyên biệt, giống như bạn đang có một đội nhân viên làm việc không mệt mỏi.
-  - Mở khóa tư duy về công nghệ: Dù không dạy code, khóa học giúp bạn hiểu được logic và cách một sản phẩm công nghệ được tạo ra. Đây là một lợi ích quý giá, giúp bạn tự tin hơn rất nhiều trong thế giới số.
-  - Xây dựng thói quen tự học & nâng cấp bản thân: Khóa học sẽ truyền cho bạn động lực và năng lượng để duy trì việc học hỏi, nâng cấp các kỹ năng cốt lõi.
-  - Cá nhân hóa 100%: Trợ lý AI được huấn luyện dựa trên dữ liệu CỦA BẠN, mang đến câu trả lời độc nhất và chính xác theo thương hiệu của bạn.
-  - Nhận một sản phẩm giá trị chưa từng có: Với một khoản học phí siêu rẻ, bạn sở hữu một hệ thống mạnh mẽ mà trước đây chỉ có các doanh nghiệp lớn mới dám mơ tới.
-Học Phí & Các Gói Hỗ Trợ:
-Gói 1: Tự Chủ Sáng Tạo (Bạn tự học, tự làm)
-    - Học phí ưu đãi: 490.000 VNĐ
-    - Mô tả: Đây là gói dành cho những bạn muốn tự mình khám phá và làm chủ công nghệ từ A-Z. Bạn sẽ học qua video và tài liệu, tự tay cài đặt và tùy chỉnh theo hướng dẫn chi tiết.
-    - Lợi ích cốt lõi: Bạn sẽ có được kỹ năng nền tảng để tự do tạo ra không giới hạn số lượng AI Agent cho mọi mục đích. Đây chính là giá trị lớn nhất khi bạn đầu tư vào kiến thức và kỹ năng cho bản thân!
-Gói 2: Chìa Khóa Trao Tay (Hỗ trợ cài đặt 1-1)
-    - Chi phí trọn gói: 980.000 VNĐ
-    - Mô tả: Nếu bạn muốn có ngay một hệ thống chạy tốt mà không cần bận tâm về các bước kỹ thuật ban đầu, gói này là dành cho bạn. Gói bao gồm toàn bộ quyền lợi của Gói 1, cộng thêm:
-    - Hỗ trợ đặc biệt: Chúng tôi sẽ kết nối trực tiếp qua UltraViewer để cài đặt và thiết lập sẵn 02 mô hình AI Agent (bạn tùy chọn trong 4 mẫu) trên máy tính của bạn.
-    - Lợi ích cốt lõi: Sau khi cài đặt xong, bạn có thể sử dụng được ngay. Việc của bạn chỉ là xem video hướng dẫn cách soạn thảo file để "huấn luyện" cho AI là có thể vận hành và kinh doanh ngay lập tức.
-Chính Sách Chung & Hỗ Trợ Đặc Biệt Về API Key:
-  - Hỗ trợ API Key ban đầu: Để đảm bảo bạn có thể bắt đầu ngay lập tức, khi tham gia khóa học, chúng tôi sẽ cung cấp miễn phí API key để bạn sử dụng trong giai đoạn đầu.
-  - Hướng dẫn làm chủ API Key: Song song đó, chúng tôi sẽ hướng dẫn chi tiết cho đến khi bạn hoàn toàn làm chủ kỹ năng tự tạo và quản lý các API key miễn phí cho tất cả các dự án trong tương lai của mình.
-  - Quyền lợi vĩnh viễn: Dù chọn gói nào, bạn cũng được truy cập trọn đời video, tài liệu, được cập nhật kiến thức mới và tham gia cộng đồng hỗ trợ vĩnh viễn.
-Lưu ý khi tư vấn sản phẩm:
-  - Lưu ý tập chung giới thiệu khóa học này, ưu tiên số 1, vì dễ học và sản phẩm thu được sau khi học vô cùng hữu ích, giá khóa học phải chăng.
-  - App AI Agent này không hỗ trợ theo dõi và lưu lại cuộc hội thoại của AI và Khách hàng, tuy nhiên có thể thuyết phục khách rằng hãy tận dụng huấn luyện để AI agent gửi link zalo, nhóm zalo và thuyết phục khách hàng ghi nhớ thông tin sản phẩm và dịch vụ, chụp màn hình để vào zalo, nhóm zalo để liên hệ thanh toán
+# Khóa học đang hot nhất
+
+# Link sản phẩm:
+* Link: https://ledacchien.com/tao-ai-agent-sieu-toc-15-phut-thanh-thao
+
+# Lưu ý khi tư vấn sản phẩm:
+* Lưu ý tập trung giới thiệu khóa học này, ưu tiên số 1, vì dễ học và sản phẩm thu được sau khi học vô cùng hữu ích, giá khóa học phải chăng.
+* App AI Agent này không hỗ trợ theo dõi và lưu lại cuộc hội thoại của AI và Khách hàng, tuy nhiên có thể thuyết phục khách rằng hãy tận dụng huấn luyện để AI agent gửi link zalo, nhóm zalo và thuyết phục khách hàng ghi nhớ thông tin sản phẩm và dịch vụ, chụp màn hình để vào zalo, nhóm zalo để liên hệ thanh toán.
+
+# Mô tả khóa học:
+* Tin vui cho bạn đây! Chúng tôi đã "đóng gói" thành công công nghệ AI phức tạp thành một sản phẩm đơn giản, trực quan và sẵn sàng chuyển giao cho bạn.
+* Khóa học này sẽ biến điều không thể thành có thể: tự tay xây dựng một Website AI Agent của riêng bạn với chi phí thấp không tưởng. (Ghi chú: Đây không phải website thông thường chỉ để hiển thị thông tin, mà là một website "sống" có thể trò chuyện, tư vấn, báo giá và làm việc cho bạn như một nhân viên thực thụ).
+* Bạn sẽ phải ngạc nhiên với sản phẩm mình nhận được, một giá trị chưa từng có mà chỉ có thể xuất hiện trong cuộc cách mạng AI này. Chúng tôi sẽ hướng dẫn bạn bằng ngôn ngữ Tiếng Việt tự nhiên, không phải thuật ngữ lập trình khô khan, để bạn sở hữu ngay một AI Agent cá nhân hóa – trợ lý ảo của riêng bạn, được huấn luyện bằng kiến thức của bạn, không phải một công cụ công cộng như ChatGPT.
+* (Không cần biết lập trình – Không giới hạn số lượng – Chi phí duy nhất là học phí).
+
+# Đối tượng mục tiêu:
+* Người mới bắt đầu, chưa từng biết lập trình, muốn tự tay làm chủ công nghệ AI một cách dễ dàng nhất.
+* Chủ shop, doanh nghiệp nhỏ, freelancer, marketer: Muốn có một "nhân viên số" làm việc 24/7 để bán hàng và chăm sóc khách hàng mà không tốn chi phí vận hành.
+* Giáo viên, sinh viên: Muốn tạo trợ lý học tập cá nhân, giúp tóm tắt tài liệu và giải đáp thắc mắc.
+* Bất kỳ ai muốn biến ý tưởng kinh doanh thành sản phẩm thật một cách nhanh chóng.
+
+# Nội dung & Lộ trình học:
+* Nhận 4 App Mẫu (Kho Mã Nguồn) Đã Đóng Gói Sẵn: Bạn được cấp quyền truy cập vào 4 bộ ứng dụng đã được lập trình sẵn. (Ghi chú: "Kho mã nguồn" giống như một ngôi nhà đã xây xong phần thô. Bạn không cần quan tâm đến gạch vữa, xi măng mà chỉ việc vào "trang trí" nội thất và sử dụng ngay).
+* Loại 1 & 2: AI Chatbot Cơ bản (Công khai / Có mật khẩu): Một trợ lý ảo trò chuyện tinh gọn.
+* Loại 3 & 4: Website Tích Hợp AI (Công khai / Có mật khẩu): Một trang web hoàn chỉnh, có cả AI Chatbot và các khu vực để bạn giới thiệu sản phẩm, dịch vụ.
+* Giải Thích Về Tính Năng "Mật Khẩu": (Ghi chú: Phiên bản có mật khẩu dùng để làm gì?) Đây là tính năng cực kỳ giá trị để bạn tạo ra các công cụ dùng riêng cho nội bộ hoặc cung cấp cho nhóm khách hàng đặc biệt. Bạn có thể huấn luyện AI các thông tin nhạy cảm như: bảng giá sỉ, quy trình báo giá, tài liệu đào tạo nhân viên, bí quyết kinh doanh... mà không sợ bị lộ ra ngoài.
+* Bí Quyết Sử Dụng Nền Tảng & Lấy "Chìa Khóa" API Miễn Phí: Chúng tôi sẽ hé lộ cách lấy API key – chiếc chìa khóa quyền năng – để bạn sử dụng trí tuệ của các mô hình AI hàng đầu thế giới hoàn toàn miễn phí. (Ghi chú: "API Key" là gì? Hãy tưởng tượng nó là một chiếc thẻ khóa cho phép ứng dụng của bạn "mở cửa" và sử dụng sức mạnh của một "bộ não AI" khổng lồ trị giá hàng tỷ đô mà bạn không cần phải tự xây dựng).
+* Video hướng dẫn chi tiết cách tải toàn bộ app mẫu bạn chọn về máy tính của mình.
+* "Xuất Bản" Website Của Bạn Lên Internet (Deploy): Video bài giảng sẽ chỉ cho bạn cách deploy ứng dụng lên nền tảng Streamlit.io. (Ghi chú: "Deploy" đơn giản là hành động "đưa website" của bạn từ máy tính cá nhân lên mạng Internet, để bất kỳ ai có đường link cũng có thể truy cập, giống như một website chuyên nghiệp). Bạn sẽ có ngay một website với địa chỉ riêng miễn phí (ví dụ: ten-cua-hang-cua-ban.streamlit.app), hoạt động 24/7 mà không cần trả tiền hosting hàng tháng.
+
+# Lợi ích đạt được:
+* Sở hữu một đội quân AI Agent cho riêng mình: Bạn có toàn quyền tạo ra không giới hạn số lượng AI Agent miễn phí. Mỗi trợ lý ảo đảm nhận một vai trò chuyên biệt, giống như bạn đang có một đội nhân viên làm việc không mệt mỏi.
+* Mở khóa tư duy về công nghệ: Dù không dạy code, khóa học giúp bạn hiểu được logic và cách một sản phẩm công nghệ được tạo ra. Đây là một lợi ích quý giá, giúp bạn tự tin hơn rất nhiều trong thế giới số.
+* Xây dựng thói quen tự học & nâng cấp bản thân: Khóa học sẽ truyền cho bạn động lực và năng lượng để duy trì việc học hỏi, nâng cấp các kỹ năng cốt lõi.
+* Cá nhân hóa 100%: Trợ lý AI được huấn luyện dựa trên dữ liệu CỦA BẠN, mang đến câu trả lời độc nhất và chính xác theo thương hiệu của bạn.
+* Nhận một sản phẩm giá trị chưa từng có: Với một khoản học phí siêu rẻ, bạn sở hữu một hệ thống mạnh mẽ mà trước đây chỉ có các doanh nghiệp lớn mới dám mơ tới.
+
+# Học Phí & Các Gói Hỗ Trợ:
+## Gói 1: Tự Chủ Sáng Tạo (Bạn tự học, tự làm)
+* Học phí ưu đãi: 490.000 VNĐ
+* Mô tả: Đây là gói dành cho những bạn muốn tự mình khám phá và làm chủ công nghệ từ A-Z. Bạn sẽ học qua video và tài liệu, tự tay cài đặt và tùy chỉnh theo hướng dẫn chi tiết.
+* Lợi ích cốt lõi: Bạn sẽ có được kỹ năng nền tảng để tự do tạo ra không giới hạn số lượng AI Agent cho mọi mục đích. Đây chính là giá trị lớn nhất khi bạn đầu tư vào kiến thức và kỹ năng cho bản thân!
+
+## Gói 2: Chìa Khóa Trao Tay (Hỗ trợ cài đặt 1-1)
+* Chi phí trọn gói: 980.000 VNĐ
+* Mô tả: Nếu bạn muốn có ngay một hệ thống chạy tốt mà không cần bận tâm về các bước kỹ thuật ban đầu, gói này là dành cho bạn. Gói bao gồm toàn bộ quyền lợi của Gói 1, cộng thêm:
+* Hỗ trợ đặc biệt: Chúng tôi sẽ kết nối trực tiếp qua UltraViewer để cài đặt và thiết lập sẵn 02 mô hình AI Agent (bạn tùy chọn trong 4 mẫu) trên máy tính của bạn.
+* Lợi ích cốt lõi: Sau khi cài đặt xong, bạn có thể sử dụng được ngay. Việc của bạn chỉ là xem video hướng dẫn cách soạn thảo file để "huấn luyện" cho AI là có thể vận hành và kinh doanh ngay lập tức.
+
+# Chính Sách Chung & Hỗ Trợ Đặc Biệt Về API Key:
+* Hỗ trợ API Key ban đầu: Để đảm bảo bạn có thể bắt đầu ngay lập tức, khi tham gia khóa học, chúng tôi sẽ cung cấp miễn phí API key để bạn sử dụng trong giai đoạn đầu.
+* Hướng dẫn làm chủ API Key: Song song đó, chúng tôi sẽ hướng dẫn chi tiết cho đến khi bạn hoàn toàn làm chủ kỹ năng tự tạo và quản lý các API key miễn phí cho tất cả các dự án trong tương lai của mình.
+* Quyền lợi vĩnh viễn: Dù chọn gói nào, bạn cũng được truy cập trọn đời video, tài liệu, được cập nhật kiến thức mới và tham gia cộng đồng hỗ trợ vĩnh viễn.
