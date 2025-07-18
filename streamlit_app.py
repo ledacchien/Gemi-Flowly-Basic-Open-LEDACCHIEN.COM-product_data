@@ -164,7 +164,7 @@ def show_chatbot():
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
-    if prompt := st.chat_input("Bạn nhập nội dung cần trao đổi ở đây nhé?"):
+    if prompt := st.chat_input("Nhập nội dung trao đổi ở đây !"):
         st.session_state.messages.append({"role": "user", "content": prompt})
         with st.chat_message("user"):
             st.markdown(prompt)
