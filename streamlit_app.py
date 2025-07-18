@@ -238,11 +238,10 @@ def show_main_page():
     # Thay đổi đường dẫn logo và tệp chào mừng
     if os.path.exists("system_data/logo.png"):
         # Sử dụng cột để căn giữa và thu nhỏ logo một cách responsive
-        # Cột giữa sẽ chứa logo, 2 cột bên cạnh trống để đẩy logo vào giữa
-        # Tỷ lệ [2,1,2] làm cho cột giữa chiếm 1/5 tổng chiều rộng, giúp logo nhỏ lại
         logo_col1, logo_col2, logo_col3 = st.columns([2,1,2])
         with logo_col2:
-            st.image("system_data/logo.png", use_column_width=True)
+            # SỬA LỖI: Thay thế use_column_width bằng use_container_width theo khuyến nghị của Streamlit
+            st.image("system_data/logo.png", use_container_width=True)
 
     st.markdown(f"<h2 style='text-align: center;'>{rfile('system_data/00.xinchao.txt') or 'Chào mừng đến với Trợ lý AI'}</h2>", unsafe_allow_html=True)
     show_chatbot()
