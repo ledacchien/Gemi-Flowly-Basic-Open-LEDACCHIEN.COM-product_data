@@ -219,10 +219,11 @@ def show_chatbot():
 # --- CÁC HÀM GIAO DIỆN ---
 def show_main_page():
     st.subheader("✨ Các bài viết nổi bật")
-    default_images = ["article_images/pic1.jpg", "article_images/pic2.jpg", "article_images/pic3.jpg"]
+    # Thay đổi đường dẫn hình ảnh và tệp tiêu đề
+    default_images = ["03bai_viet/article_images/pic1.jpg", "03bai_viet/article_images/pic2.jpg", "03bai_viet/article_images/pic3.jpg"]
     default_titles = ["Tiêu đề bài viết 1", "Tiêu đề bài viết 2", "Tiêu đề bài viết 3"]
     image_paths = [path if os.path.exists(path) else f"https://placehold.co/400x267/a3e635/44403c?text=Thiếu+ảnh+{i+1}" for i, path in enumerate(default_images)]
-    article_titles = load_config_data("config_titles.txt", default_titles)
+    article_titles = load_config_data("03bai_viet/config_titles.txt", default_titles)
     
     col1, col2, col3 = st.columns(3, gap="medium")
     for i, col in enumerate([col1, col2, col3]):
