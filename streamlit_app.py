@@ -131,8 +131,8 @@ def show_chatbot():
     model_name = rfile("module_gemini.txt").strip() or "gemini-1.5-pro-latest"
     
     # --- THAY ĐỔI BẮT ĐẦU TỪ ĐÂY ---
-    # 1. Tải câu lệnh hệ thống gốc
-    base_system_prompt = rfile("01.system_trainning.txt")
+    # 1. Tải câu lệnh hệ thống gốc từ thư mục system_data
+    base_system_prompt = rfile("system_data/01.system_trainning.txt")
     
     # 2. Tải tất cả dữ liệu sản phẩm
     all_products_data = get_all_products_as_dicts()
@@ -171,7 +171,8 @@ def show_chatbot():
     # Khởi tạo lịch sử chat nếu chưa có
     if "chat" not in st.session_state or "messages" not in st.session_state:
         st.session_state.chat = model.start_chat()
-        st.session_state.messages = [{"role": "assistant", "content": rfile("02.assistant.txt") or "Tôi có thể giúp gì cho bạn?"}]
+        # Thay đổi đường dẫn tệp tin nhắn chào mừng
+        st.session_state.messages = [{"role": "assistant", "content": rfile("system_data/02.assistant.txt") or "Tôi có thể giúp gì cho bạn?"}]
 
     # Hiển thị các tin nhắn cũ
     for message in st.session_state.messages:
@@ -219,7 +220,7 @@ def show_chatbot():
 # --- CÁC HÀM GIAO DIỆN ---
 def show_main_page():
     st.subheader("✨ Các bài viết nổi bật")
-    # Thay đổi đường dẫn hình ảnh và tệp tiêu đề
+    # Đường dẫn hình ảnh và tệp tiêu đề không thay đổi
     default_images = ["03bai_viet/article_images/pic1.jpg", "03bai_viet/article_images/pic2.jpg", "03bai_viet/article_images/pic3.jpg"]
     default_titles = ["Tiêu đề bài viết 1", "Tiêu đề bài viết 2", "Tiêu đề bài viết 3"]
     image_paths = [path if os.path.exists(path) else f"https://placehold.co/400x267/a3e635/44403c?text=Thiếu+ảnh+{i+1}" for i, path in enumerate(default_images)]
@@ -234,8 +235,9 @@ def show_main_page():
                 st.rerun()
 
     st.divider()
-    if os.path.exists("logo.png"): st.image("logo.png")
-    st.markdown(f"<h2 style='text-align: center;'>{rfile('00.xinchao.txt') or 'Chào mừng đến với Trợ lý AI'}</h2>", unsafe_allow_html=True)
+    # Thay đổi đường dẫn logo và tệp chào mừng
+    if os.path.exists("system_data/logo.jpg"): st.image("system_data/logo.jpg")
+    st.markdown(f"<h2 style='text-align: center;'>{rfile('system_data/00.xinchao.txt') or 'Chào mừng đến với Trợ lý AI'}</h2>", unsafe_allow_html=True)
     show_chatbot()
 
 def show_article_page(article_number):
