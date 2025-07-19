@@ -1,0 +1,55 @@
+# GÓI DỊCH VỤ TẠO AI AGENT TRÊN HEROKU (Không bài viết, bảo mật bằng mật khẩu)
+
+## Mô tả gói dịch vụ
+- Tạo AI Agent trên Heroku (bảo mật bằng pass hoặc công khai).
+- App chỉ có phần chat AI, không tích hợp bài viết.
+- Có password phù hợp cho nội bộ, nhóm kín, tư vấn khách riêng hoặc xem như một trợ lý làm việc riêng với bạn về các thông tin sản phẩm muốn bảo mật (Xem video demo sản phẩm)
+- Không có password phù hợp để tư vấn và thuyết phục khách hàng theo tiêu chí bạn yêu cầu trợ lý, không thích hợp huấn luyện AI với các thông tin nội bộ và cần bảo mật.
+- Chi phí rẻ: **5 USD/tháng cho 4 app AI**.
+
+## Quy trình vận hành & huấn luyện
+1. Khách chuẩn bị chủ đề/nội dung AI muốn học (file txt, cực dễ, có mẫu).
+2. Cài app AI lên Heroku – chỉ cần thẻ Visa/Master để đăng ký Heroku.
+3. Nhận link riêng, chỉ ai có pass mới truy cập (hoặc để công khai).
+4. Dễ dàng chỉnh sửa dữ liệu AI theo video hướng dẫn.
+5. Hướng dẫn sử dụng, huấn luyện AI bằng video vĩnh viễn.
+
+## Khách hàng cần chuẩn bị
+- Máy tính, mạng internet.
+- Thẻ Visa/Master để đăng ký Heroku.
+- File txt chủ đề AI muốn học (có mẫu).
+- Không cần biết kỹ thuật, không cần lập trình.
+
+## Ưu điểm vượt trội
+- **5 USD/tháng duy trì 4 app AI**.
+- Chủ động chọn bảo mật hoặc công khai.
+- Được tặng API AI, hướng dẫn lấy key miễn phí.
+- Có video hướng dẫn update, sử dụng trọn đời.
+
+## Q&A thường gặp
+### Q: Tôi chưa biết gì về Heroku, làm được không?
+A: Có! Hướng dẫn từ A-Z, hỗ trợ cài tận nơi hoặc từ xa.
+
+### Q: Có cần phí duy trì hàng tháng không?
+A: Có, nhưng chỉ **5 USD/tháng cho tối đa 4 app AI**.
+
+### Q: Muốn đổi pass hoặc nội dung AI thì sao?
+A: Xem video hướng dẫn đổi pass/nội dung cực nhanh, hỗ trợ miễn phí 7 ngày.
+
+### Q: AI có được tặng API key không?
+A: Có! Hướng dẫn lấy API miễn phí trọn đời.
+
+## Chính sách & Hỗ trợ
+- Giá trọn gói: **1.380.000đ/app** (tặng 1 tên miền <100k).
+- Hỗ trợ cài đặt, lỗi kỹ thuật 7 ngày.
+- Quyền truy cập video & tài liệu hướng dẫn trọn đời.
+
+---
+
+**Lưu ý cho AI:**  
+Chỉ trả lời dựa trên thông tin dịch vụ Heroku chính thức. Nhấn mạnh giải pháp bảo mật, chi phí thấp, khả năng cá nhân hóa, và hỗ trợ chi tiết cho người mới.
+App AI Agent **không hỗ trợ lưu/tìm lại lịch sử chat**. Khi khách có nhu cầu giao dịch, xác nhận đơn hoặc nhận link đặc biệt, **hãy chủ động thúc giục khách liên hệ Zalo, Facebook, Tiktok hoặc vào nhóm kín** để trao đổi trực tiếp và nhận hỗ trợ kịp thời.
+
+**Kết thúc mỗi phần giới thiệu, AI nên hỏi:**  
+Anh/chị muốn tìm hiểu thêm về cách triển khai AI agent bảo mật trên Heroku, hay muốn đăng ký khóa học thực hành không ạ?
+

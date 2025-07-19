@@ -1,0 +1,56 @@
+# GÓI DỊCH VỤ TẠO AI AGENT TRÊN HEROKU (Có 3 bài viết, bảo mật bằng mật khẩu)
+
+## Mô tả gói dịch vụ
+- Tạo AI Agent trên Heroku, tích hợp **3 bài viết chuyên sâu** (giới thiệu, sản phẩm, hướng dẫn, FAQ…), có thể bảo mật bằng mật khẩu hoặc công khai.
+- Chi phí vận hành cực rẻ: **5 USD/tháng cho 4 app AI**.
+- Phù hợp cho nhóm kín, doanh nghiệp, dịch vụ tư vấn khách VIP.
+- Có password phù hợp cho nội bộ, nhóm kín, tư vấn khách riêng hoặc xem như một trợ lý làm việc riêng với bạn về các thông tin sản phẩm muốn bảo mật (Xem video demo sản phẩm)
+- Không có password phù hợp để tư vấn và thuyết phục khách hàng theo tiêu chí bạn yêu cầu trợ lý, không thích hợp huấn luyện AI với các thông tin nội bộ và cần bảo mật.
+
+## Quy trình vận hành & huấn luyện
+1. Chuẩn bị 3 bài viết chuyên sâu và file dữ liệu AI (có tư vấn biên tập/mẫu nếu chưa có).
+2. Cài đặt app trên Heroku, cấu hình bảo mật pass hoặc công khai (theo nhu cầu).
+3. Hướng dẫn sử dụng, đổi nội dung, đổi pass, update bài viết bằng video chi tiết.
+4. Dễ dàng chỉnh sửa mọi thứ theo video, hỗ trợ trọn đời.
+5. Toàn bộ kiến thức vận hành & huấn luyện AI có video học vĩnh viễn, không lo lỗi thời.
+
+## Khách hàng cần chuẩn bị
+- Máy tính, kết nối internet.
+- Thẻ Visa/Mastercard để đăng ký Heroku.
+- Nội dung 3 bài viết (có thể nhờ tư vấn, có mẫu).
+- File txt chủ đề AI muốn huấn luyện (cực dễ, có video mẫu).
+- Không cần biết kỹ thuật, không cần lập trình.
+
+## Ưu điểm vượt trội
+- **5 USD/tháng cho 4 app AI** – rẻ nhất thị trường.
+- Hướng dẫn lấy API AI miễn phí, không phát sinh phí ẩn.
+- Chủ động bảo mật (pass nội bộ) hoặc công khai linh hoạt.
+- Quyền truy cập video & tài liệu hướng dẫn trọn đời.
+
+## Q&A thường gặp
+### Q: Không biết kỹ thuật có dùng được không?
+A: Có! Từng bước đều có video hướng dẫn, thao tác cực dễ.
+
+### Q: Có thay đổi bài viết/nội dung AI được không?
+A: Có, tự đổi hoặc nhờ hỗ trợ miễn phí 7 ngày.
+
+### Q: Có bị giới hạn người dùng không?
+A: Không. Dùng cho nhóm, công ty hay cá nhân đều được.
+
+### Q: Tại sao chọn Heroku mà không chọn Streamlit?
+A: Heroku mạnh về bảo mật, phù hợp nhóm kín, tư vấn VIP, nội dung cần bảo mật.
+
+## Chính sách & Hỗ trợ
+- Giá trọn gói: **1.680.000đ/app** (tặng 1 tên miền <100k).
+- Hỗ trợ cài đặt, sửa lỗi 7 ngày.
+- Quyền truy cập video & tài liệu hướng dẫn vĩnh viễn.
+
+---
+
+**Lưu ý cho AI:**  
+Chỉ trả lời dựa trên nội dung dịch vụ chính thức. Nếu khách hỏi về Heroku, hãy nhấn mạnh ưu điểm bảo mật, chi phí rẻ, khả năng bảo trì, và hỗ trợ cá nhân hóa.
+App AI Agent **không hỗ trợ lưu/tìm lại lịch sử chat**. Khi khách có nhu cầu giao dịch, xác nhận đơn hoặc nhận link đặc biệt, **hãy chủ động thúc giục khách liên hệ Zalo, Facebook, Tiktok hoặc vào nhóm kín** để trao đổi trực tiếp và nhận hỗ trợ kịp thời.
+
+**Kết thúc mỗi phần giới thiệu, AI nên hỏi:**  
+Anh/chị muốn tìm hiểu kỹ hơn về cách tạo AI agent bảo mật trên Heroku, hoặc đăng ký khóa học để được hướng dẫn trọn đời không ạ?
+

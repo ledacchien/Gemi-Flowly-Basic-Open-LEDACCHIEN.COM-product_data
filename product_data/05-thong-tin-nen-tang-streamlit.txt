@@ -1,0 +1,63 @@
+# THÔNG TIN NỀN TẢNG STREAMLIT – DÀNH CHO GIẢI THÍCH, KHÔNG PHẢI SẢN PHẨM
+
+**Lưu ý cho AI:**  
+Đây không phải sản phẩm/dịch vụ bán cho khách, chỉ là file thông tin để giải thích về nền tảng Streamlit khi khách hỏi hoặc muốn biết so sánh. Không liệt kê file này khi giới thiệu các gói sản phẩm, chỉ sử dụng nội dung này khi khách hỏi trực tiếp về Streamlit.
+
+---
+
+## Streamlit là gì và vì sao nên chọn Streamlit?
+- Nền tảng tạo ứng dụng AI/chatbot/website miễn phí, cho người mới, không cần lập trình.
+- Ưu điểm: Không cần server, không mất phí hosting, cực dễ cài đặt, ai cũng làm được.
+- Phù hợp: Chủ shop, cá nhân kinh doanh nhỏ, giáo viên, freelancer, sinh viên muốn tạo “nhân viên số” tự động 24/7, tiết kiệm chi phí tối đa.
+
+## Anh Lê Đắc Chiến – Người tối ưu giải pháp
+- Đã tối ưu quy trình để bất kỳ ai cũng có thể sở hữu AI agent “bộ não tỷ đô” với chi phí 0 đồng, không rủi ro, không phức tạp.
+
+## Quy trình cài đặt & vận hành trên Streamlit
+### Bước 1: Chuẩn bị
+- Máy tính/laptop, internet.
+- Soạn sẵn file dữ liệu huấn luyện AI (.txt, có mẫu).
+- Nếu chưa biết soạn file, gửi yêu cầu sẽ có file mẫu, video hướng dẫn.
+
+### Bước 2: Cài đặt app AI agent
+- Tải app mẫu về máy (video hướng dẫn, hỗ trợ nếu cần).
+- Tạo tài khoản miễn phí trên **Streamlit Cloud** (đăng ký qua email).
+- Đăng nhập, tải app mẫu lên Streamlit bằng kéo-thả, không cần lập trình.
+- Hệ thống sẽ tự động tạo website AI: tenban.streamlit.app
+
+### Bước 3: Kết nối “bộ não AI” miễn phí
+- Được tặng API key AI miễn phí, có video hướng dẫn lấy key và nhập vào app.
+- Chỉ cần copy-paste, app sẽ tự thông minh, trả lời mọi thắc mắc theo dữ liệu bạn đã huấn luyện.
+- Muốn đổi dữ liệu, chỉ cần cập nhật file txt và tải lại (video hướng dẫn rõ ràng).
+
+### Bước 4: Hoàn tất – AI agent hoạt động 24/7 miễn phí
+- Ai cũng có thể truy cập app AI qua link website.
+- Không phí duy trì, không cần hosting, không phải lo bảo trì kỹ thuật.
+- Nếu muốn update, chỉ cần chỉnh sửa file dữ liệu, update vài phút.
+
+### Bước 5: Hỗ trợ & học suốt đời
+- Video hướng dẫn từng bước, bộ câu hỏi thường gặp, tài liệu chi tiết.
+- Hỗ trợ 1-1 từ xa (UltraViewer/Teamviewer) nếu gặp khó khăn.
+- Quyền truy cập khóa học vận hành AI agent vĩnh viễn – bản cập nhật tặng miễn phí!
+
+## Q&A – Giải tỏa mọi lo lắng cho người mới
+### Q: Tôi chưa từng cài ứng dụng, liệu có làm được không?
+A: Hoàn toàn được! Chỉ cần tải file, đăng ký Streamlit, kéo-thả là xong. Có video thực hành, hỗ trợ từ xa.
+
+### Q: Nếu không biết soạn file huấn luyện cho AI?
+A: Có file mẫu, video hướng dẫn chi tiết. Chỉ cần gõ nội dung muốn AI trả lời, còn lại bên mình hỗ trợ.
+
+### Q: Có tốn tiền hosting, server không?
+A: Không! Streamlit hoàn toàn miễn phí.
+
+### Q: Dữ liệu AI có bị lộ không?
+A: Streamlit là công khai, phù hợp tư vấn khách hàng, bán hàng, giải đáp cộng đồng, không dùng cho nội dung tuyệt mật.
+
+### Q: Sau này muốn đổi nội dung, update AI thì làm thế nào?
+A: Sửa file txt, tải lại là xong. Video hướng dẫn thao tác chỉ 1 phút.
+
+### Q: Tại sao chọn Streamlit mà không phải nền tảng khác?
+A: Streamlit miễn phí, đơn giản nhất, phù hợp người mới. Đã tối ưu quy trình, ai cũng dùng được.
+
+## Kết luận
+Quy trình có video hướng dẫn thực tế, từng bước cực dễ. Kể cả bạn chưa dùng máy tính nhiều cũng thao tác được. Khóa học sẽ giải thích, demo chi tiết nhất, mọi thắc mắc đều có hỗ trợ tận tình.

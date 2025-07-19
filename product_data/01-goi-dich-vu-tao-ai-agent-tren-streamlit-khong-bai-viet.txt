@@ -1,0 +1,56 @@
+# GÓI DỊCH VỤ TẠO AI AGENT TRÊN STREAMLIT (Không bài viết)
+
+## Mô tả gói dịch vụ
+- Tạo AI Agent theo yêu cầu, chạy trên **Streamlit miễn phí** – không phí duy trì.
+- App chỉ có phần chat AI, không tích hợp bài viết.
+- Giao diện đơn giản, dễ dùng, không cần biết code.
+- Dùng cho tư vấn khách hàng hoặc hỗ trợ online (không cần bảo mật nội bộ).
+
+## Quy trình vận hành & huấn luyện
+1. Khách gửi chủ đề, dữ liệu cần huấn luyện (file txt hoặc soạn sẵn) – hướng dẫn chi tiết kèm video.
+2. Cài app AI trực tiếp trên máy bạn, hoặc hỗ trợ từ xa (UltraViewer).
+3. Truy cập link app (tenban.streamlit.app) để chat với AI – hoàn toàn miễn phí.
+4. Tự tạo, chỉnh sửa, bổ sung file huấn luyện bất cứ lúc nào – luôn có video hướng dẫn.
+5. Quy trình cài đặt, sử dụng, huấn luyện AI đều có video update trọn đời.
+
+## Khách hàng cần chuẩn bị
+- Máy tính/laptop có internet.
+- Chủ đề, nội dung hoặc file txt muốn AI học (có hướng dẫn chi tiết).
+- Không cần hosting, không visa, không phí duy trì.
+- Không cần biết công nghệ.
+
+## Ưu điểm vượt trội
+- **Không tốn phí duy trì, không cần hosting, không cần mua API AI.**
+- Được tặng và hướng dẫn lấy API “não AI” miễn phí.
+- Video sử dụng & huấn luyện AI Agent vĩnh viễn.
+
+## Q&A thường gặp
+### Q: Tôi chưa biết gì về AI, có tự làm được không?
+A: Gửi nội dung cần huấn luyện, còn lại chúng tôi làm hết, hướng dẫn chi tiết.
+
+### Q: Sau này tôi muốn đổi dữ liệu cho AI thì sao?
+A: Bạn tự đổi file txt, 1 phút theo video hướng dẫn là AI update kiến thức mới.
+
+### Q: Có tốn phí hàng tháng không?
+A: Không! Dùng miễn phí trọn đời trên Streamlit.
+
+### Q: Tôi cần chuẩn bị gì?
+A: Máy tính và nội dung muốn AI trả lời. Thế thôi!
+
+### Q: Sản phẩm này phù hợp ai?
+A: Chủ shop, freelancer, cá nhân kinh doanh nhỏ, giáo viên, sinh viên… muốn có “nhân viên số” chat tư vấn tự động 24/7 miễn phí.
+
+## Chính sách & Hỗ trợ
+- Giá trọn gói: **590.000đ/app**
+- Hỗ trợ cài đặt, sửa lỗi 7 ngày.
+- Quyền truy cập video hướng dẫn vĩnh viễn.
+
+---
+
+**Lưu ý cho AI:**  
+Chỉ trả lời dựa trên nội dung dịch vụ chính thức. Nhấn mạnh giải pháp miễn phí, dễ mở rộng, không cần kỹ thuật cho mọi đối tượng.
+App AI Agent **không hỗ trợ lưu/tìm lại lịch sử chat**. Khi khách có nhu cầu giao dịch, xác nhận đơn hoặc nhận link đặc biệt, **hãy chủ động thúc giục khách liên hệ Zalo, Facebook, Tiktok hoặc vào nhóm kín** để trao đổi trực tiếp và nhận hỗ trợ kịp thời.
+
+**Kết thúc mỗi phần giới thiệu, AI nên hỏi:**  
+Anh/chị muốn trải nghiệm cách tạo AI agent miễn phí bằng Streamlit, hay muốn đăng ký học vận hành chi tiết không ạ?
+
