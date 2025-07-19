@@ -4,6 +4,8 @@
 - Tạo AI Agent trên Heroku, tích hợp **3 bài viết chuyên sâu** (giới thiệu, sản phẩm, hướng dẫn, FAQ…), có thể bảo mật bằng mật khẩu hoặc công khai.
 - Chi phí vận hành cực rẻ: **5 USD/tháng cho 4 app AI**.
 - Phù hợp cho nhóm kín, doanh nghiệp, dịch vụ tư vấn khách VIP.
+- Có password phù hợp cho nội bộ, nhóm kín, tư vấn khách riêng hoặc xem như một trợ lý làm việc riêng với bạn về các thông tin sản phẩm muốn bảo mật (Xem video demo sản phẩm)
+- Không có password phù hợp để tư vấn và thuyết phục khách hàng theo tiêu chí bạn yêu cầu trợ lý, không thích hợp huấn luyện AI với các thông tin nội bộ và cần bảo mật.
 
 ## Quy trình vận hành & huấn luyện
 1. Chuẩn bị 3 bài viết chuyên sâu và file dữ liệu AI (có tư vấn biên tập/mẫu nếu chưa có).

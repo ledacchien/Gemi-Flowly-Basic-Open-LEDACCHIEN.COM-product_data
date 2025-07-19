@@ -3,7 +3,8 @@
 ## Mô tả gói dịch vụ
 - Tạo AI Agent trên Heroku (bảo mật bằng pass hoặc công khai).
 - App chỉ có phần chat AI, không tích hợp bài viết.
-- Phù hợp cho nội bộ, nhóm kín, tư vấn khách riêng.
+- Có password phù hợp cho nội bộ, nhóm kín, tư vấn khách riêng hoặc xem như một trợ lý làm việc riêng với bạn về các thông tin sản phẩm muốn bảo mật (Xem video demo sản phẩm)
+- Không có password phù hợp để tư vấn và thuyết phục khách hàng theo tiêu chí bạn yêu cầu trợ lý, không thích hợp huấn luyện AI với các thông tin nội bộ và cần bảo mật.
 - Chi phí rẻ: **5 USD/tháng cho 4 app AI**.
 
 ## Quy trình vận hành & huấn luyện
