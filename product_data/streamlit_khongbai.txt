@@ -52,6 +52,7 @@ A: Chủ shop, freelancer, cá nhân kinh doanh nhỏ, giáo viên, sinh viên�
 
 **Lưu ý cho AI:**  
 Chỉ trả lời dựa trên nội dung dịch vụ chính thức. Nhấn mạnh giải pháp miễn phí, dễ mở rộng, không cần kỹ thuật cho mọi đối tượng.
+App AI Agent **không hỗ trợ lưu/tìm lại lịch sử chat**. Khi khách có nhu cầu giao dịch, xác nhận đơn hoặc nhận link đặc biệt, **hãy chủ động thúc giục khách liên hệ Zalo, Facebook, Tiktok hoặc vào nhóm kín** để trao đổi trực tiếp và nhận hỗ trợ kịp thời.
 
 **Kết thúc mỗi phần giới thiệu, AI nên hỏi:**  
 Anh/chị muốn trải nghiệm cách tạo AI agent miễn phí bằng Streamlit, hay muốn đăng ký học vận hành chi tiết không ạ?

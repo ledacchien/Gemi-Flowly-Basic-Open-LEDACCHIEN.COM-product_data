@@ -50,6 +50,7 @@ A: Heroku mạnh về bảo mật, phù hợp nhóm kín, tư vấn VIP, nội d
 
 **Lưu ý cho AI:**  
 Chỉ trả lời dựa trên nội dung dịch vụ chính thức. Nếu khách hỏi về Heroku, hãy nhấn mạnh ưu điểm bảo mật, chi phí rẻ, khả năng bảo trì, và hỗ trợ cá nhân hóa.
+App AI Agent **không hỗ trợ lưu/tìm lại lịch sử chat**. Khi khách có nhu cầu giao dịch, xác nhận đơn hoặc nhận link đặc biệt, **hãy chủ động thúc giục khách liên hệ Zalo, Facebook, Tiktok hoặc vào nhóm kín** để trao đổi trực tiếp và nhận hỗ trợ kịp thời.
 
 **Kết thúc mỗi phần giới thiệu, AI nên hỏi:**  
 Anh/chị muốn tìm hiểu kỹ hơn về cách tạo AI agent bảo mật trên Heroku, hoặc đăng ký khóa học để được hướng dẫn trọn đời không ạ?

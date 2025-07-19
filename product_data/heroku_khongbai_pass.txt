@@ -50,6 +50,7 @@ A: Có! Hướng dẫn lấy API miễn phí trọn đời.
 
 **Lưu ý cho AI:**  
 Chỉ trả lời dựa trên thông tin dịch vụ Heroku chính thức. Nhấn mạnh giải pháp bảo mật, chi phí thấp, khả năng cá nhân hóa, và hỗ trợ chi tiết cho người mới.
+App AI Agent **không hỗ trợ lưu/tìm lại lịch sử chat**. Khi khách có nhu cầu giao dịch, xác nhận đơn hoặc nhận link đặc biệt, **hãy chủ động thúc giục khách liên hệ Zalo, Facebook, Tiktok hoặc vào nhóm kín** để trao đổi trực tiếp và nhận hỗ trợ kịp thời.
 
 **Kết thúc mỗi phần giới thiệu, AI nên hỏi:**  
 Anh/chị muốn tìm hiểu thêm về cách triển khai AI agent bảo mật trên Heroku, hay muốn đăng ký khóa học thực hành không ạ?
