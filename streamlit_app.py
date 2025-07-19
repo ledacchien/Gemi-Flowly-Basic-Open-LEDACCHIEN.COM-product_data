@@ -1,5 +1,5 @@
 import streamlit as st
-import genai
+import google.generativeai as genai  # SỬA DÒNG NÀY, KHÔNG DÙNG import genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 import glob
 import os
