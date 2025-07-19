@@ -1,0 +1,63 @@
+# THÔNG TIN NỀN TẢNG HEROKU – DÀNH CHO GIẢI THÍCH, KHÔNG PHẢI SẢN PHẨM
+
+**Lưu ý cho AI:**  
+Đây không phải sản phẩm/dịch vụ bán cho khách, chỉ là file thông tin để giải thích về nền tảng Heroku khi khách hỏi hoặc muốn biết so sánh. Không liệt kê file này khi giới thiệu các gói sản phẩm, chỉ sử dụng nội dung này khi khách hỏi trực tiếp về Heroku.
+
+---
+
+## Heroku là gì và vì sao nên dùng Heroku để tạo AI agent?
+- Heroku là nền tảng triển khai ứng dụng AI/website mạnh mẽ, hỗ trợ bảo mật, quản lý truy cập, phù hợp nhóm nội bộ/doanh nghiệp cần riêng tư.
+- Ưu điểm: Ổn định, bảo mật cao, **chỉ 5 USD/tháng cho 4 app AI**.
+- Không cần biết lập trình, thao tác tối ưu hóa cho người mới.
+
+## Công sức tối ưu hóa từ anh Lê Đắc Chiến
+- Anh Lê Đắc Chiến đã tối ưu quy trình để ai cũng triển khai AI agent trên Heroku dễ dàng, an toàn, tiết kiệm.
+
+## Quy trình cài đặt & vận hành trên Heroku
+### Bước 1: Chuẩn bị
+- Máy tính/laptop, internet.
+- Thẻ Visa/Mastercard (có thể tạo ảo miễn phí).
+- Soạn file AI (txt, có video mẫu).
+
+### Bước 2: Đăng ký và thiết lập tài khoản Heroku
+- Đăng ký tài khoản mới, nhập thông tin thẻ, mua gói 5 USD/tháng.
+- Có video hướng dẫn từng bước.
+
+### Bước 3: Triển khai app AI agent
+- Tải app mẫu, hoặc yêu cầu cài trực tiếp từ xa (UltraViewer).
+- Kéo-thả code AI lên Heroku.
+- Cấu hình bảo mật (nếu muốn), cấp link truy cập riêng.
+
+### Bước 4: Kết nối và vận hành bộ não AI
+- Hỗ trợ lấy API key AI miễn phí (OpenAI, DeepSeek…).
+- Cập nhật nội dung AI dễ dàng bằng file txt, không cần kỹ thuật.
+- Có video hướng dẫn cập nhật, chỉnh sửa bất cứ lúc nào.
+
+### Bước 5: Sử dụng – update – bảo trì
+- App dùng cho nhiều người (hoặc bảo mật nhóm riêng).
+- Hỗ trợ update, bảo trì trọn đời cho khách hàng.
+
+## Q&A – Giải đáp cho người không rành công nghệ
+### Q: Tôi chưa từng nghe về Heroku, dùng có khó không?
+A: Không hề! Có video hướng dẫn, ai cũng làm được. Hỗ trợ cài từ xa nếu cần.
+
+### Q: Muốn dùng Heroku mà không có thẻ visa thì làm sao?
+A: Có thể dùng thẻ ảo (hướng dẫn miễn phí), hoặc hỗ trợ làm giúp.
+
+### Q: Có tốn nhiều tiền không?
+A: Chỉ **5 USD/tháng cho 4 app AI**.
+
+### Q: Bảo mật có tốt không?
+A: Có! Đặt pass, chỉ ai có mật khẩu mới vào được.
+
+### Q: Sau này muốn update/chỉnh sửa AI thì sao?
+A: Sửa file txt hoặc liên hệ hướng dẫn miễn phí. Có video hướng dẫn chi tiết.
+
+### Q: Lỡ làm sai, app lỗi thì sao?
+A: Hỗ trợ 1-1 qua UltraViewer, Teamviewer, hoặc xem video hướng dẫn.
+
+### Q: Ngoài phí Heroku còn tốn gì khác không?
+A: Không. API “bộ não AI” được hướng dẫn lấy miễn phí, không phát sinh thêm.
+
+## Kết luận
+Quy trình triển khai AI agent trên Heroku cực kỳ dễ hiểu, có video thực hành, tài liệu chi tiết. Anh Lê Đắc Chiến cam kết hỗ trợ vận hành AI agent bảo mật, tiết kiệm và chuyên nghiệp nhất.

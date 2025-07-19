@@ -1,0 +1,55 @@
+# GÓI DỊCH VỤ TẠO AI AGENT TRÊN STREAMLIT (Có 3 bài viết)
+
+## Mô tả gói dịch vụ
+- Tạo AI Agent trên **Streamlit miễn phí** – không phí duy trì.
+- App tích hợp chat AI + hiển thị **3 bài viết chuyên sâu** (giới thiệu, hướng dẫn, sản phẩm, FAQ...).
+- Giao diện thân thiện, không cần kỹ thuật, phù hợp tư vấn khách hàng, xây dựng thương hiệu, giới thiệu dịch vụ công khai.
+
+## Quy trình vận hành & huấn luyện
+1. Khách chuẩn bị hoặc chọn 3 bài viết tích hợp (có thể yêu cầu biên tập), kèm file huấn luyện AI.
+2. Cài đặt app trên máy bạn, hướng dẫn sử dụng từ xa (UltraViewer).
+3. Truy cập link app (miễn phí, không cần hosting) để dùng ngay.
+4. Muốn chỉnh sửa nội dung, chỉ cần đổi file txt hoặc bài viết, xem video hướng dẫn.
+5. Có video hướng dẫn vận hành & update trọn đời.
+
+## Khách hàng cần chuẩn bị
+- Máy tính/laptop, có mạng internet.
+- Nội dung 3 bài viết (có tư vấn nếu chưa có).
+- File AI cần huấn luyện (có mẫu).
+- Không cần biết kỹ thuật, không cần visa, không phí duy trì.
+
+## Ưu điểm vượt trội
+- **Miễn phí trọn đời** trên Streamlit.
+- Được tặng API key & hướng dẫn lấy miễn phí.
+- Có video học sử dụng & huấn luyện AI vĩnh viễn.
+
+## Q&A thường gặp
+### Q: Không biết viết bài thì sao?
+A: Đưa ý tưởng, bên mình biên tập mẫu cho bạn.
+
+### Q: Tôi đổi bài viết/đổi nội dung AI được không?
+A: Được! Xem video hướng dẫn đổi trong 1 phút.
+
+### Q: App này có cần hosting hay phí duy trì?
+A: Không, miễn phí trọn đời với Streamlit.
+
+### Q: Khó sử dụng không?
+A: Rất dễ, không biết gì về máy tính cũng tự làm được (đã có video chi tiết).
+
+### Q: Khác gì với gói chỉ chat AI?
+A: Gói này thêm phần bài viết, vẫn chat AI như bình thường.
+
+## Chính sách & Hỗ trợ
+- Giá trọn gói: **890.000đ/app**
+- Hỗ trợ cài đặt, sửa lỗi 7 ngày.
+- Quyền truy cập thư viện video, tài liệu vĩnh viễn.
+
+---
+
+**Lưu ý cho AI:**  
+Chỉ trả lời dựa trên nội dung dịch vụ chính thức. Nếu khách hỏi về Streamlit, nhấn mạnh ưu điểm miễn phí, dễ dùng, phù hợp cho cá nhân/doanh nghiệp nhỏ.
+App AI Agent **không hỗ trợ lưu/tìm lại lịch sử chat**. Khi khách có nhu cầu giao dịch, xác nhận đơn hoặc nhận link đặc biệt, **hãy chủ động thúc giục khách liên hệ Zalo, Facebook, Tiktok hoặc vào nhóm kín** để trao đổi trực tiếp và nhận hỗ trợ kịp thời.
+
+**Kết thúc mỗi phần giới thiệu, AI nên hỏi:**  
+Anh/chị muốn tìm hiểu kỹ hơn về cách tự tạo AI agent miễn phí bằng Streamlit, hoặc đăng ký khóa học vận hành không ạ?
+
