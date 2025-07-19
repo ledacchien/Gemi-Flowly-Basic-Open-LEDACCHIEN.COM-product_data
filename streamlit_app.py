@@ -28,8 +28,7 @@ def load_config_data(config_file, default_data):
     except Exception:
         return default_data
 
-# --- CÁC HÀM XỬ LÝ DỮ LIỆU ---
-
+# --- CÁC HÀM XỬ LÝ DỮ LIỆU SẢN PHẨM ---
 @st.cache_data(ttl=600)
 def get_all_products_as_dicts(folder_path="product_data"):
     """
@@ -54,7 +53,7 @@ def get_all_products_as_dicts(folder_path="product_data"):
                 value_clean = value_str.strip()
                 
                 try:
-                    # Cố gắng chuyển đổi các chuỗi có số thành kiểu float
+                    # Cố gắng chuyển đổi các chuỗi có số thành kiểu số
                     numerical_part = re.sub(r'[^\d.]', '', value_clean)
                     if numerical_part:
                         product_dict[key_clean] = float(numerical_part)
@@ -68,8 +67,20 @@ def get_all_products_as_dicts(folder_path="product_data"):
             product_index.append(product_dict)
     return product_index
 
-# --- CÁC CÔNG CỤ CHUYÊN DỤNG CHO AI (LOGIC BẰNG PYTHON) ---
+# --- HÀM CHÀO HỎI ĐỘNG DỰA TRÊN SẢN PHẨM ---
+def make_greeting_message(product_dicts):
+    if not product_dicts:
+        return "Chào bạn, mình là Flowly – trợ lý AI của ledacchien.com! Hiện tại chưa có dịch vụ hoặc khóa học nào đang mở. Vui lòng quay lại sau hoặc liên hệ Zalo để được hỗ trợ."
+    lines = ["Chào bạn, mình là Flowly – trợ lý AI của ledacchien.com! Dưới đây là các dịch vụ/khoá học hiện có:"]
+    for idx, p in enumerate(product_dicts, 1):
+        # Ưu tiên lấy tên sản phẩm từ các trường chuẩn hóa, nếu không thì lấy dòng đầu tiên trong file
+        name = p.get('ten_san_pham') or p.get('tên_sản_phẩm') or p.get('ten') or p.get('tên') \
+               or p.get('original_content', '').split('\n')[0]
+        lines.append(f"{idx}. {name}")
+    lines.append("Bạn quan tâm đến dịch vụ nào, hoặc muốn so sánh thêm không?")
+    return "\n".join(lines)
 
+# --- CÁC CÔNG CỤ CHUYÊN DỤNG CHO AI ---
 def find_products(product_type: str = None, sort_key: str = None, sort_order: str = 'desc', n_results: int = 1):
     """
     Tìm kiếm, lọc và sắp xếp sản phẩm để trả lời các câu hỏi như 'căn hộ rẻ nhất', '3 biệt thự rộng nhất'.
@@ -113,10 +124,8 @@ def count_products_by_type(product_type: str = None):
 def show_chatbot():
     google_api_key = None
     try:
-        # Cố gắng đọc secrets từ file local trước
         google_api_key = st.secrets.get("GOOGLE_API_KEY")
     except (StreamlitAPIException, StreamlitSecretNotFoundError):
-        # Nếu lỗi (do chạy trên Heroku không có file), thì đọc từ biến môi trường
         google_api_key = os.environ.get("GOOGLE_API_KEY")
 
     if not google_api_key:
@@ -134,6 +143,7 @@ def show_chatbot():
     base_system_prompt = rfile("system_data/01.system_trainning.txt")
     all_products_data = get_all_products_as_dicts()
     
+    # Nạp system prompt + thông tin sản phẩm hiện hành
     if all_products_data:
         product_data_string = "\nDưới đây là toàn bộ danh sách sản phẩm hệ thống mà bạn cần ghi nhớ để trả lời người dùng. Thông tin này là kiến thức nền của bạn:\n\n"
         for product in all_products_data:
@@ -156,9 +166,11 @@ def show_chatbot():
         }
     )
 
+    # Greeting động theo sản phẩm hiện tại
     if "chat" not in st.session_state or "messages" not in st.session_state:
+        greeting = make_greeting_message(all_products_data)
         st.session_state.chat = model.start_chat()
-        st.session_state.messages = [{"role": "assistant", "content": rfile("system_data/02.assistant.txt") or "Tôi có thể giúp gì cho bạn?"}]
+        st.session_state.messages = [{"role": "assistant", "content": greeting}]
 
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
@@ -245,12 +257,9 @@ def main():
         st.markdown("Một sản phẩm của [Lê Đắc Chiến](https://ledacchien.com)")
 
     st.markdown("""<style>
-        /* CSS gốc */
         [data-testid="stToolbar"], header, #MainMenu {visibility: hidden !important;}
         div[data-testid="stHorizontalBlock"]:has(div[data-testid="stChatMessageContent-user"]) { justify-content: flex-end; }
         div[data-testid="stChatMessage"]:has(div[data-testid="stChatMessageContent-user"]) { flex-direction: row-reverse; }
-
-        /* Định dạng box ảnh bài viết */
         .st-emotion-cache-1v0mbdj > div > div > div > div > div[data-testid="stVerticalBlock"] .stImage {
             height: 150px;
             width: 100%;
@@ -262,13 +271,9 @@ def main():
             width: 100%;
             object-fit: cover;
         }
-
-        /* Sửa lỗi khoảng trắng trên di động */
         [data-testid="stChatMessages"] {
             min-height: 70vh;
         }
-
-        /* CSS cho di động */
         @media (max-width: 768px) {
             .st-emotion-cache-1v0mbdj > div > div > div > div > div[data-testid="stVerticalBlock"] .stImage {
                 height: 100px;
