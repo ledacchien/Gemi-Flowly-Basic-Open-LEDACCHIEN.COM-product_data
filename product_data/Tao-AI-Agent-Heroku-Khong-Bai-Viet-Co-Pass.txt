@@ -1,0 +1,42 @@
+# DỊCH VỤ: Tạo AI Agent trên Heroku (Không bài viết, có thể bảo mật bằng pass)
+
+## Mô tả gói dịch vụ
+- Tạo AI Agent theo yêu cầu, triển khai trên nền tảng **Heroku** (bảo mật bằng pass hoặc công khai).
+- App chỉ có phần chat AI (không tích hợp bài viết).
+- Phù hợp cho nội bộ, nhóm kín hoặc dùng tư vấn khách riêng biệt.
+- Chi phí duy trì rẻ nhất thị trường: **5 USD/tháng vận hành tới 4 app AI** (~1 app chỉ vài chục nghìn đồng/tháng).
+- Có thể chọn bảo mật bằng mật khẩu (chỉ nhóm được truy cập).
+
+## Quy trình vận hành & huấn luyện
+1. **Khách chuẩn bị chủ đề/nội dung muốn AI học** (file txt, có hướng dẫn cực dễ).
+2. Chúng tôi cài đặt app AI lên Heroku trên máy bạn – bạn chỉ cần có **thẻ Visa/Master để đăng ký Heroku** (hướng dẫn đăng ký, mua gói 5 USD/tháng).
+3. Sau khi cài đặt, bạn nhận link riêng, chỉ ai có pass mới truy cập (hoặc để công khai nếu muốn).
+4. **Dễ dàng chỉnh sửa file dữ liệu AI bất cứ lúc nào theo video hướng dẫn.**
+5. Toàn bộ hướng dẫn sử dụng, vận hành, huấn luyện đều có **video học vĩnh viễn**.
+
+## Khách hàng cần chuẩn bị gì?
+- Máy tính, có mạng.
+- Thẻ Visa/Master để đăng ký Heroku.
+- Nội dung chủ đề cho AI học (file txt, cực dễ – có mẫu hướng dẫn).
+- Không cần biết kỹ thuật, không cần code.
+
+## Ưu điểm vượt trội
+- Chỉ **5 USD/tháng duy trì 4 app AI** (cực rẻ).
+- Chọn bảo mật bằng pass (nội bộ) hoặc để công khai (tùy ý).
+- Được tặng API AI, hướng dẫn lấy key miễn phí, không tốn phí chạy AI.
+- Có video hướng dẫn vận hành & huấn luyện AI, update trọn đời.
+
+## Q&A thường gặp
+- **Tôi chưa biết gì về Heroku, làm được không?**
+  → Có! Hướng dẫn A-Z, hỗ trợ cài đặt tận nơi hoặc từ xa.
+- **Có cần phí duy trì hàng tháng không?**
+  → Có, nhưng chỉ **5 USD/tháng cho tối đa 4 app AI** – rẻ nhất thị trường.
+- **Muốn đổi pass hoặc nội dung AI thì sao?**
+  → Xem video hướng dẫn đổi pass/nội dung cực nhanh, hỗ trợ miễn phí 7 ngày.
+- **AI có được tặng API key không?**
+  → Có! Hướng dẫn chi tiết lấy và dùng API miễn phí trọn đời.
+
+## Chính sách & Hỗ trợ
+- Giá trọn gói: **890.000đ/app**
+- Hỗ trợ cài đặt, lỗi kỹ thuật 7 ngày.
+- Quyền truy cập khóa học, video hướng dẫn vận hành & huấn luyện AI vĩnh viễn.

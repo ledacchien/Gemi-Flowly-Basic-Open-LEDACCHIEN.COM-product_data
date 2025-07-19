@@ -1,0 +1,42 @@
+# DỊCH VỤ: Tạo AI Agent trên Streamlit (Không bài viết)
+
+## Mô tả gói dịch vụ
+- Tạo AI Agent theo yêu cầu, chạy trên nền tảng **Streamlit miễn phí** – KHÔNG phát sinh chi phí hàng tháng.
+- App chỉ có phần chat AI, tư vấn trực tiếp. Không tích hợp bài viết.
+- Giao diện cực đơn giản, bất kỳ ai cũng dễ dùng. Không cần biết code.
+- Chuyên dùng cho tư vấn khách hàng hoặc hỗ trợ online mà không cần bảo mật nội bộ.
+
+## Quy trình vận hành & huấn luyện
+1. **Khách gửi chủ đề, dữ liệu cần huấn luyện (file txt hoặc soạn sẵn) – hướng dẫn chi tiết kèm video.**
+2. Chúng tôi sẽ cài đặt app AI trực tiếp trên máy bạn, hoặc hỗ trợ từ xa (UltraViewer).
+3. Bạn chỉ việc truy cập link app (ví dụ: tenban.streamlit.app) để chat với AI – hoàn toàn miễn phí.
+4. **Tự tạo, chỉnh sửa, bổ sung file dữ liệu huấn luyện bất cứ lúc nào** – luôn có video hướng dẫn.
+5. Toàn bộ quy trình cài đặt, sử dụng, huấn luyện AI đều có **video hướng dẫn vĩnh viễn, update trọn đời**.
+
+## Khách hàng cần chuẩn bị gì?
+- Chỉ cần **máy tính/laptop** có kết nối internet.
+- Chuẩn bị sẵn **chủ đề, nội dung hoặc file txt muốn AI học** (nếu chưa có sẽ được hướng dẫn kỹ).
+- Không cần hosting, không cần visa, không mất chi phí duy trì.
+- Không cần biết công nghệ, chúng tôi hướng dẫn từ A-Z.
+
+## Ưu điểm vượt trội
+- **Không tốn phí duy trì, không cần hosting, không cần mua API AI.**
+- Được tặng và hướng dẫn lấy API “não AI” miễn phí – “bộ não tỷ đô” tích hợp vào app của bạn, dùng thoải mái, chi phí 0 đồng!
+- Học kèm: **Video sử dụng & huấn luyện AI Agent vĩnh viễn** – Cứ cập nhật là có thêm, không sợ lỗi thời.
+
+## Q&A thường gặp
+- **Tôi chưa biết gì về AI, có tự làm được không?**
+  → Yên tâm, bạn chỉ việc gửi nội dung cần huấn luyện, còn lại chúng tôi làm hết và hướng dẫn chi tiết qua video. Mọi thứ đều đơn giản hóa tối đa.
+- **Sau này tôi muốn đổi dữ liệu cho AI thì sao?**
+  → Bạn tự đổi, bổ sung file txt, chỉ 1 phút theo hướng dẫn video là AI update kiến thức mới.
+- **Có tốn phí hàng tháng không?**
+  → Không! Dùng miễn phí trọn đời trên Streamlit.
+- **Tôi cần chuẩn bị gì?**
+  → Máy tính và nội dung bạn muốn AI trả lời. Thế thôi!
+- **Sản phẩm này phù hợp ai?**
+  → Chủ shop, freelancer, cá nhân kinh doanh nhỏ, giáo viên, sinh viên… muốn có “nhân viên số” chat tư vấn tự động 24/7 miễn phí.
+
+## Chính sách & Hỗ trợ
+- Giá trọn gói: **490.000đ/app**
+- Hỗ trợ cài đặt, khắc phục lỗi 7 ngày.
+- Quyền truy cập thư viện hướng dẫn, video vĩnh viễn (update trọn đời).
