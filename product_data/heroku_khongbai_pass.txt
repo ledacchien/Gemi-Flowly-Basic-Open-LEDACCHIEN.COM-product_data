@@ -1,7 +1,4 @@
-#SERVICE: Heroku
-#FEATURE: Không bài viết | Có pass
-
-# TẠO AI AGENT TRÊN HEROKU (Không bài viết, bảo mật bằng mật khẩu)
+# GÓI DỊCH VỤ TẠO AI AGENT TRÊN HEROKU (Không bài viết, bảo mật bằng mật khẩu)
 
 ## Mô tả gói dịch vụ
 - Tạo AI Agent trên Heroku (bảo mật bằng pass hoặc công khai).

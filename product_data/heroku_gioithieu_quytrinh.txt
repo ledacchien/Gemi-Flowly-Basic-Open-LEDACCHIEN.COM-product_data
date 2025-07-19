@@ -1,7 +1,5 @@
-#SERVICE: Heroku
-#FEATURE: Giới thiệu & Quy trình tổng quan
-
 # GIỚI THIỆU NỀN TẢNG HEROKU – CÁCH TẠO AI AGENT BẢO MẬT, CHI PHÍ SIÊU RẺ
+Nội dung dùng để giới thiệu cho khách hàng về nền tảng deloy app AI nếu khách hàng muốn có thông tin
 
 ## Heroku là gì và vì sao nên dùng Heroku để tạo AI agent?
 - Heroku là nền tảng triển khai ứng dụng AI/website mạnh mẽ, hỗ trợ bảo mật, quản lý truy cập, phù hợp nhóm nội bộ/doanh nghiệp cần riêng tư.

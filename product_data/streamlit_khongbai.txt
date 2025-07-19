@@ -1,7 +1,4 @@
-#SERVICE: Streamlit
-#FEATURE: Không bài viết | Không pass
-
-# TẠO AI AGENT TRÊN STREAMLIT (Không bài viết)
+# GÓI DỊCH VỤ TẠO AI AGENT TRÊN STREAMLIT (Không bài viết)
 
 ## Mô tả gói dịch vụ
 - Tạo AI Agent theo yêu cầu, chạy trên **Streamlit miễn phí** – không phí duy trì.

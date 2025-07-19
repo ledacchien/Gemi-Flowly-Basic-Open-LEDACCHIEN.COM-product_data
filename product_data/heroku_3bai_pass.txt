@@ -1,7 +1,4 @@
-#SERVICE: Heroku
-#FEATURE: 3 bài viết | Có pass
-
-# TẠO AI AGENT TRÊN HEROKU (Có 3 bài viết, bảo mật bằng mật khẩu)
+# GÓI DỊCH VỤ TẠO AI AGENT TRÊN HEROKU (Có 3 bài viết, bảo mật bằng mật khẩu)
 
 ## Mô tả gói dịch vụ
 - Tạo AI Agent trên Heroku, tích hợp **3 bài viết chuyên sâu** (giới thiệu, sản phẩm, hướng dẫn, FAQ…), có thể bảo mật bằng mật khẩu hoặc công khai.

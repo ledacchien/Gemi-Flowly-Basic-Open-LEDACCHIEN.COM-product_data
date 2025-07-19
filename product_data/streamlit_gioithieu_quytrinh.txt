@@ -1,7 +1,5 @@
-#SERVICE: Streamlit
-#FEATURE: Giới thiệu & Quy trình tổng quan
-
 # GIỚI THIỆU NỀN TẢNG STREAMLIT – CÁCH TẠO AI AGENT MIỄN PHÍ DỄ NHƯ ĂN BÁNH
+Nội dung dùng để giới thiệu cho khách hàng về nền tảng deloy app AI nếu khách hàng muốn có thông tin
 
 ## Streamlit là gì và vì sao nên chọn Streamlit?
 - Nền tảng tạo ứng dụng AI/chatbot/website miễn phí, cho người mới, không cần lập trình.
