@@ -1,5 +1,5 @@
 import streamlit as st
-import google.generativeai as genai  # SỬA DÒNG NÀY, KHÔNG DÙNG import genai
+import google.generativeai as genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 import glob
 import os
@@ -51,7 +51,7 @@ model = genai.GenerativeModel(
 
 # Lời chào lấy từ file assistant (02.assistant.txt)
 if "chat" not in st.session_state or "messages" not in st.session_state:
-    assistant_greeting = rfile("system_data/02.assistant.txt") or "Chào bạn, mình là Flowly."
+    assistant_greeting = rfile("system_data/02.assistant.txt") or "Em kính chào anh/chị, Em là Flowly - Trợ lý AI Agent tại ledacchien.com. Anh/chị cần tư vấn về khóa học hoặc dịch vụ nào, em sẽ hỗ trợ ngay ạ!"
     st.session_state.chat = model.start_chat()
     st.session_state.messages = [{"role": "assistant", "content": assistant_greeting}]
 
